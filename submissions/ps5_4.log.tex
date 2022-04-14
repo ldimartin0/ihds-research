@@ -1,0 +1,9 @@
+. gen lwshourly = log(WSHOURLY)
+(322,898 missing values generated)
+{\smallskip}
+. pctile income_dec = INCOME, nq(10)
+{\smallskip}
+. pctile wshourly_dec = WSHOURLY, nq(10)
+{\smallskip}
+. hist wshourly_dec, by(RO3)
+{\smallskip}

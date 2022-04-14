@@ -1,0 +1,19 @@
+. ttest WSHOURLY, by(RO3)
+{\smallskip}
+Two-sample t test with equal variances
+\HLI{9}{\TOPT}\HLI{68}
+   Group {\VBAR}     Obs        Mean    Std. err.   Std. dev.   [95\% conf. interval]
+\HLI{9}{\PLUS}\HLI{68}
+  Male 1 {\VBAR}  70,170     29.1133    .1263209    33.46194    28.86571    29.36088
+Female 2 {\VBAR}  27,243    17.07203     .145522    24.01907    16.78679    17.35726
+\HLI{9}{\PLUS}\HLI{68}
+Combined {\VBAR}  97,413    25.74577    .1011724    31.57697    25.54748    25.94407
+\HLI{9}{\PLUS}\HLI{68}
+    diff {\VBAR}            12.04127    .2220863                11.60598    12.47656
+\HLI{9}{\BOTT}\HLI{68}
+    diff = mean(Male 1) - mean(Female 2)                          t =  54.2189
+H0: diff = 0                                     Degrees of freedom =    97411
+{\smallskip}
+    Ha: diff < 0                 Ha: diff != 0                 Ha: diff > 0
+ Pr(T < t) = 1.0000         Pr(|T| > |t|) = 0.0000          Pr(T > t) = 0.0000
+{\smallskip}

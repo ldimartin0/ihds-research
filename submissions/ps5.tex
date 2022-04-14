@@ -1,0 +1,43 @@
+\documentclass[a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath, amssymb}
+\usepackage{stata}
+\usepackage{graphicx}
+
+%\renewcommand{\thesubsection}{\thesection.\alph{subsection}}
+
+\title{Problem Set 5 Figures}
+\author{Luke DiMartino}
+
+\begin{document}
+\maketitle
+
+I am analyzing data from the India Human Development Survey. My focus is on gender disparities and the effects of education on them.
+
+My baseline hypothesis, of course, is that there is a difference in wealth and income between men and women. The variables are intuitively named, except \verb|RO3|, which is the indicator for sex.
+
+This is a panel dataset, so first I'll report basic statistics about the balance of the panel, with panel survival by state and by sex.
+\begin{stlog}\input{ps5_1.log.tex}\end{stlog}
+This $t$-test shows that there is a highly statistically significant naive difference in income between men and women.
+\begin{stlog}\input{ps5_2.log.tex}\end{stlog}
+This $t$-test shows that there is a highly statistically significant naive difference in hourly wage between men and women --- on average, men earn about 12 rupees more per hour than women.
+\begin{stlog}\input{ps5_3.log.tex}\end{stlog}
+This $t$-test shows that there is a highly statistically significant naive difference in poverty between men and women --- women are about 1.1 percentage points more likely to be poor.
+\begin{stlog}\input{ps5_4.log.tex}\end{stlog}
+\begin{center}
+    \includegraphics[width=.6\textwidth]{ps5_4.pdf}
+\end{center}
+The histogram of hourly wages has tails far too long to be meaningful, but this histogram grouped by decile shows the difference in the wage distribution between men and women. 
+\begin{stlog}\input{ps5_5.log.tex}\end{stlog}
+\begin{center}
+    \includegraphics[width=.6\textwidth]{ps5_5.pdf}
+\end{center}
+This histogram shows the difference in log hourly wage distributions between men and women.
+
+Going forward, my plan is to clean the income and wage data to get more accurate measures, including determining what to do with outliers and negative results. Then, I will construct control variables from the relevant variables in the survey. From there, I should be able to develop a fundamental OLS model with broad controls.
+
+Then, I will develop a household fixed effects model and investigate potential instruments for gender-equality-related independent variables.
+
+\end{document}

@@ -1,0 +1,189 @@
+{smcl}
+{com}{sf}{ul off}{txt}{.-}
+      name:  {res}<unnamed>
+       {txt}log:  {res}/Users/ldimartino19/ihds-research/submissions/ps5.smcl
+  {txt}log type:  {res}smcl
+ {txt}opened on:  {res}13 Apr 2022, 20:28:52
+{txt}
+{com}. use "data/indiv-appended-long-panel.dta"
+{txt}(India Human Development Survey Panel (IHDS, IHDS-II), 2005, 2011-2012, Individua)
+
+{com}. 
+. texdoc stlog
+{res}{txt}(opening texdoc stlog ps5_1)
+
+{com}. tab STATEID PWAVES, row nofreq
+
+                      {txt}{c |}   which surveys p has been in
+           State code {c |} only 2012  only 2005    both 11 {c |}     Total
+{hline 22}{c +}{hline 33}{c +}{hline 10}
+   Jammu & Kashmir 01 {c |}{res}     10.90      12.21      76.89 {txt}{c |}{res}    100.00 
+{txt}  Himachal Pradesh 02 {c |}{res}     10.48      14.50      75.02 {txt}{c |}{res}    100.00 
+{txt}            Punjab 03 {c |}{res}     10.16      13.51      76.33 {txt}{c |}{res}    100.00 
+{txt}        Chandigarh 04 {c |}{res}     20.78      24.16      55.06 {txt}{c |}{res}    100.00 
+{txt}       Uttarakhand 05 {c |}{res}     10.82      13.99      75.19 {txt}{c |}{res}    100.00 
+{txt}           Haryana 06 {c |}{res}     13.16      12.29      74.56 {txt}{c |}{res}    100.00 
+{txt}             Delhi 07 {c |}{res}     29.06      28.89      42.05 {txt}{c |}{res}    100.00 
+{txt}         Rajasthan 08 {c |}{res}     13.12      13.57      73.31 {txt}{c |}{res}    100.00 
+{txt}     Uttar Pradesh 09 {c |}{res}     13.20      13.01      73.79 {txt}{c |}{res}    100.00 
+{txt}             Bihar 10 {c |}{res}     13.27      15.07      71.66 {txt}{c |}{res}    100.00 
+{txt}            Sikkim 11 {c |}{res}     16.57      16.77      66.67 {txt}{c |}{res}    100.00 
+{txt} Arunachal Pradesh 12 {c |}{res}     11.00      21.93      67.07 {txt}{c |}{res}    100.00 
+{txt}          Nagaland 13 {c |}{res}     26.96      32.18      40.86 {txt}{c |}{res}    100.00 
+{txt}           Manipur 14 {c |}{res}      7.42      18.18      74.40 {txt}{c |}{res}    100.00 
+{txt}           Mizoram 15 {c |}{res}      9.19      27.44      63.37 {txt}{c |}{res}    100.00 
+{txt}           Tripura 16 {c |}{res}     21.28      25.90      52.83 {txt}{c |}{res}    100.00 
+{txt}         Meghalaya 17 {c |}{res}      9.92      14.71      75.36 {txt}{c |}{res}    100.00 
+{txt}             Assam 18 {c |}{res}     23.92      24.33      51.75 {txt}{c |}{res}    100.00 
+{txt}       West Bengal 19 {c |}{res}     10.62      12.42      76.97 {txt}{c |}{res}    100.00 
+{txt}         Jharkhand 20 {c |}{res}     13.23      19.22      67.56 {txt}{c |}{res}    100.00 
+{txt}            Orissa 21 {c |}{res}     10.26      13.04      76.70 {txt}{c |}{res}    100.00 
+{txt}      Chhattisgarh 22 {c |}{res}     12.88      11.98      75.15 {txt}{c |}{res}    100.00 
+{txt}    Madhya Pradesh 23 {c |}{res}     11.99      14.05      73.97 {txt}{c |}{res}    100.00 
+{txt}           Gujarat 24 {c |}{res}     13.62      17.70      68.67 {txt}{c |}{res}    100.00 
+{txt}       Daman & Diu 25 {c |}{res}      9.76      11.39      78.84 {txt}{c |}{res}    100.00 
+{txt}Dadra+Nagar Haveli 26 {c |}{res}     16.85      17.01      66.14 {txt}{c |}{res}    100.00 
+{txt}       Maharashtra 27 {c |}{res}      9.74      11.64      78.61 {txt}{c |}{res}    100.00 
+{txt}    Andhra Pradesh 28 {c |}{res}     13.34      21.22      65.44 {txt}{c |}{res}    100.00 
+{txt}         Karnataka 29 {c |}{res}     14.15      18.53      67.32 {txt}{c |}{res}    100.00 
+{txt}               Goa 30 {c |}{res}      5.91       7.54      86.55 {txt}{c |}{res}    100.00 
+{txt}            Kerala 32 {c |}{res}      9.80      17.94      72.26 {txt}{c |}{res}    100.00 
+{txt}        Tamil Nadu 33 {c |}{res}     10.28      15.92      73.79 {txt}{c |}{res}    100.00 
+{txt}       Pondicherry 34 {c |}{res}      7.63      13.80      78.56 {txt}{c |}{res}    100.00 
+{txt}{hline 22}{c +}{hline 33}{c +}{hline 10}
+                Total {c |}{res}     12.75      15.41      71.84 {txt}{c |}{res}    100.00 
+{txt}
+{com}. 
+. tab RO3 PWAVES, row nofreq
+
+   {txt}HQ4 2.3 {c |}   which surveys p has been in
+       Sex {c |} only 2012  only 2005    both 11 {c |}     Total
+{hline 11}{c +}{hline 33}{c +}{hline 10}
+    Male 1 {c |}{res}     10.83      14.50      74.67 {txt}{c |}{res}    100.00 
+{txt}  Female 2 {c |}{res}     14.69      16.33      68.98 {txt}{c |}{res}    100.00 
+{txt}{hline 11}{c +}{hline 33}{c +}{hline 10}
+     Total {c |}{res}     12.75      15.41      71.84 {txt}{c |}{res}    100.00 
+{txt}
+{com}. 
+. ttest INCOME, by(RO3)
+
+{txt}Two-sample t test with equal variances
+{hline 9}{c TT}{hline 68}
+   Group{col 10}{c |}{col 16}Obs{col 27}Mean{col 35}Std. err.{col 47}Std. dev.{col 59}[95% conf. interval]
+{hline 9}{c +}{hline 68}
+  Male 1 {c |}{res}{col 12}211,889{col 22} 128778.6{col 34} 466.3794{col 46}   214681{col 58} 127864.5{col 70} 129692.7
+{txt}Female 2 {c |}{res}{col 12}208,422{col 22} 124881.3{col 34}  455.824{col 46} 208098.5{col 58} 123987.9{col 70} 125774.7
+{txt}{hline 9}{c +}{hline 68}
+Combined {c |}{res}{col 12}420,311{col 22}   126846{col 34} 326.1556{col 46} 211451.2{col 58} 126206.8{col 70} 127485.3
+{txt}{hline 9}{c +}{hline 68}
+    diff {c |}{res}{col 22} 3897.264{col 34} 652.3065{col 58} 2618.764{col 70} 5175.765
+{txt}{hline 9}{c BT}{hline 68}
+    diff = mean({res}Male 1{txt}) - mean({res}Female 2{txt})                          t = {res}  5.9746
+{txt}H0: diff = 0                                     Degrees of freedom = {res}  420309
+
+    {txt}Ha: diff < 0                 Ha: diff != 0                 Ha: diff > 0
+ Pr(T < t) = {res}1.0000         {txt}Pr(|T| > |t|) = {res}0.0000          {txt}Pr(T > t) = {res}0.0000
+{txt}
+{com}. texdoc stlog close
+{res}{txt}(log-file written to {browse `"/Users/ldimartino19/ihds-research/submissions/ps5_1.log.tex"':submissions/ps5_1.log.tex})
+{res}{txt}
+{com}. texdoc append_snippet 3
+{res}{txt}
+{com}. texdoc stlog
+{res}{txt}(opening texdoc stlog ps5_2)
+
+{com}. ttest WSHOURLY, by(RO3)
+
+{txt}Two-sample t test with equal variances
+{hline 9}{c TT}{hline 68}
+   Group{col 10}{c |}{col 16}Obs{col 27}Mean{col 35}Std. err.{col 47}Std. dev.{col 59}[95% conf. interval]
+{hline 9}{c +}{hline 68}
+  Male 1 {c |}{res}{col 12} 70,170{col 22}  29.1133{col 34} .1263209{col 46} 33.46194{col 58} 28.86571{col 70} 29.36088
+{txt}Female 2 {c |}{res}{col 12} 27,243{col 22} 17.07203{col 34}  .145522{col 46} 24.01907{col 58} 16.78679{col 70} 17.35726
+{txt}{hline 9}{c +}{hline 68}
+Combined {c |}{res}{col 12} 97,413{col 22} 25.74577{col 34} .1011724{col 46} 31.57697{col 58} 25.54748{col 70} 25.94407
+{txt}{hline 9}{c +}{hline 68}
+    diff {c |}{res}{col 22} 12.04127{col 34} .2220863{col 58} 11.60598{col 70} 12.47656
+{txt}{hline 9}{c BT}{hline 68}
+    diff = mean({res}Male 1{txt}) - mean({res}Female 2{txt})                          t = {res} 54.2189
+{txt}H0: diff = 0                                     Degrees of freedom = {res}   97411
+
+    {txt}Ha: diff < 0                 Ha: diff != 0                 Ha: diff > 0
+ Pr(T < t) = {res}1.0000         {txt}Pr(|T| > |t|) = {res}0.0000          {txt}Pr(T > t) = {res}0.0000
+{txt}
+{com}. texdoc stlog close
+{res}{txt}(log-file written to {browse `"/Users/ldimartino19/ihds-research/submissions/ps5_2.log.tex"':submissions/ps5_2.log.tex})
+{res}{txt}
+{com}. texdoc append_snippet 4
+{res}{txt}
+{com}. texdoc stlog
+{res}{txt}(opening texdoc stlog ps5_3)
+
+{com}. ttest POOR, by(RO3)
+
+{txt}Two-sample t test with equal variances
+{hline 9}{c TT}{hline 68}
+   Group{col 10}{c |}{col 16}Obs{col 27}Mean{col 35}Std. err.{col 47}Std. dev.{col 59}[95% conf. interval]
+{hline 9}{c +}{hline 68}
+  Male 1 {c |}{res}{col 12}211,718{col 22} .2147715{col 34} .0008925{col 46} .4106647{col 58} .2130223{col 70} .2165208
+{txt}Female 2 {c |}{res}{col 12}208,262{col 22} .2254948{col 34} .0009157{col 46} .4179088{col 58}    .2237{col 70} .2272897
+{txt}{hline 9}{c +}{hline 68}
+Combined {c |}{res}{col 12}419,980{col 22} .2200891{col 34} .0006393{col 46}  .414307{col 58}  .218836{col 70} .2213421
+{txt}{hline 9}{c +}{hline 68}
+    diff {c |}{res}{col 22}-.0107233{col 34} .0012785{col 58}-.0132292{col 70}-.0082174
+{txt}{hline 9}{c BT}{hline 68}
+    diff = mean({res}Male 1{txt}) - mean({res}Female 2{txt})                          t = {res} -8.3871
+{txt}H0: diff = 0                                     Degrees of freedom = {res}  419978
+
+    {txt}Ha: diff < 0                 Ha: diff != 0                 Ha: diff > 0
+ Pr(T < t) = {res}0.0000         {txt}Pr(|T| > |t|) = {res}0.0000          {txt}Pr(T > t) = {res}1.0000
+{txt}
+{com}. texdoc stlog close
+{res}{txt}(log-file written to {browse `"/Users/ldimartino19/ihds-research/submissions/ps5_3.log.tex"':submissions/ps5_3.log.tex})
+{res}{txt}
+{com}. texdoc append_snippet 5
+{res}{txt}
+{com}. texdoc stlog
+{res}{txt}(opening texdoc stlog ps5_4)
+
+{com}. gen lwshourly = log(WSHOURLY)
+{txt}(322,898 missing values generated)
+
+{com}. pctile income_dec = INCOME, nq(10)
+{txt}
+{com}. pctile wshourly_dec = WSHOURLY, nq(10)
+{txt}
+{com}. hist wshourly_dec, by(RO3)
+{res}{txt}
+{com}. texdoc stlog close
+{res}{txt}(log-file written to {browse `"/Users/ldimartino19/ihds-research/submissions/ps5_4.log.tex"':submissions/ps5_4.log.tex})
+{res}{txt}
+{com}. texdoc graph, optargs(width=.6\textwidth)
+{res}{txt}(graph written to {browse `"/Users/ldimartino19/ihds-research/submissions/ps5_4.pdf"':submissions/ps5_4.pdf})
+{res}{txt}
+{com}. texdoc append_snippet 6
+{res}{txt}
+{com}. texdoc stlog
+{res}{txt}(opening texdoc stlog ps5_5)
+
+{com}. twoway (histogram lwshourly if RO3==2, color(red)) ///
+>        (histogram lwshourly if RO3==1, ///
+>            fcolor(none) lcolor(blue)), legend(order(1 "Female" 2 "Male" ))
+{res}{txt}
+{com}. texdoc stlog close
+{res}{txt}(log-file written to {browse `"/Users/ldimartino19/ihds-research/submissions/ps5_5.log.tex"':submissions/ps5_5.log.tex})
+{res}{txt}
+{com}. texdoc graph, optargs(width=.6\textwidth)
+{res}{txt}(graph written to {browse `"/Users/ldimartino19/ihds-research/submissions/ps5_5.pdf"':submissions/ps5_5.pdf})
+{res}{txt}
+{com}. texdoc append_snippet 7
+{res}{txt}
+{com}. 
+. log close
+      {txt}name:  {res}<unnamed>
+       {txt}log:  {res}/Users/ldimartino19/ihds-research/submissions/ps5.smcl
+  {txt}log type:  {res}smcl
+ {txt}closed on:  {res}13 Apr 2022, 20:29:00
+{txt}{.-}
+{smcl}
+{txt}{sf}{ul off}
