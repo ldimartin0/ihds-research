@@ -10,12 +10,47 @@
 \author{Luke DiMartino}
 \date{\today}
 
-
 \begin{document}
 
 \maketitle
 
-\section{India Human Development Survey}
+\section{Discussion}
+I am interested in studying gender-based wage discrimination in India. I am particularly interested in replicating prior work examining the existence of a sticky floor or glass ceiling for wages.
 
-\section{Gender and Wage in India}
+There is substantial prior work on gender- and caste-based wage discrimination in India. The pioneering work examined caste discrimination in urban labor markets (Banerjee and Knight 1985). More recently, authors have employed ordinary least squares for naive estimates of the mean difference in wages between men and women (Agrawal 2013) and between public and private sector workers (Axmann et al. 2016). This work relied on foundational models for decomposing differences to determine the extent of "unexplained" discrimination (Blinder 1973).
+
+
+A large body of research has examined "sticky floors" and "glass ceilings," the potential for varied gender and caste discrimination at different income levels (Khanna 2012; Azam and Prakash 2015; Deshpande et al. 2018). Other authors have examined rural-urban differences (Azam 2019). Importantly, this research has been focused on the National Sample Survey's Employment-Unemployment Schedule. These authors rely on newer decomposition methods to analyze varied discrimination effects (Machado and Mata 2006; Machado et al. 2006). Finally, other research has examined theoretical models of discrimination consistent with empirical results from long-term panel data (Esteve-Volart 2004).
+
+My plan is to roughly replicate the models used by the authors examining the National Sample Survey with the India Human Development Survey. Additional information about each respondent allows for additional control variables like benefits received, aspects of familial life, and other demographic characteristics. My preliminary results suggest quantile regression with the IDHS data will be fruitful, but I am also pursuing a difference-in-differences model for some novel results.
+
+\section{Abstracts and Commentary}
+
+\paragraph{Axmann et al. 2016} Using data from the Indian Human Development Survey, we examine evidence of caste and religion-based discrimination in the Indian private and public sector. Both Dalits and Adivasis show significant results of discrimination in the private sector, and benefit disproportionately from working in the public sector. This is strong evidence that at least some of the affirmative action policies in the public sector are proving effective. The policy implications are relevant: should similar affirmative action policies be implemented in the private sector? Further, this research suggests a path for further research to understand why protected castes do not benefit from affirmative action programs to the same extent as Dalits and Adivasis.
+
+\textit{This paper examines other forms of discrimination and focuses on the difference between private and public sector jobs, a focus I may choose to adopt. Since it uses the same data, its choice and coding of control variables will be a good guide for my own work.}
+
+\paragraph{Agrawal 2013} This paper examines gender and social groups wage discrimination in India using a nationally representative survey. We examine the wage gaps between different sub-groups of population separately in the rural and urban sectors using the Blinder-Oaxaca decomposition method. To account for possibility of the sample selection bias, the Heckman correction model is employed. We find a large wage differential between gender groups and between different social groups. The decomposition analysis reveals that the wage differential between males and females can largely be attributed to discrimination in the labor market. Nevertheless, in case of social groups this gap is mostly driven by differences in endowments.
+
+\textit{This paper conducts a rigorous analysis of wage and caste discrimination. I aim to build upon it by introducing more specific models, including quantile regression, that determine the extent to which its results hold for population subgroups, particularly at different income levels. The Heckman sample correction may also be a useful technique.}
+
+\paragraph{Esteve-Volart 2004} Gender inequality is an acute and persistent problem, especially in developing countries. This paper argues that gender discrimination is an inefficient practice. We model gender discrimination as the complete exclusion of females from the labor market or as the exclusion of females from managerial positions. The distortions in the allocation of talent between managerial and unskilled positions, and in human capital investment, are analyzed. It is found that both types of discrimination lower economic growth; and that the former also implies a reduction in per capita GDP, while the latter distorts the allocation of talent. Both types of discrimination imply lower female-to-male schooling ratios. We discuss the sustainability of social norms or stigma that can generate discrimination in the form described in this paper. We present evidence based on panel-data regressions across Indian states over 1961-1991 that is consistent with the model’s predictions.
+
+\textit{This paper is useful background for gender discrimination in India and will be useful for a discussion of theoretical models of discrimination and its effects.}
+
+\paragraph{Khanna 2012} Traditional analysis of gender wage gaps has largely focused on average gaps between men and women, and mean wage decompositions such as the Blinder-Oaxaca (1973) decomposition method. To answer the question of whether there is a “glass ceiling” or a “sticky floor,” i.e. whether wage gaps are higher at the upper or lower ends of the wage distribution, this paper examines the wage gaps across different quantiles of the wage distribution. These gender wage gaps are analysed for regular wage workers in India using the 66th round of the National Sample Survey’s Employment-Unemployment Schedule (2009-2010). The paper finds evidence of a “sticky floor.” In addition to estimating the standard OLS wage equations for men and women, quantile regressions are used to assess how different covariates such as education, union membership, and occupations, affect within and between group (gender) inequalities. Finally, the Machado-Mata-Melly (2006) decomposition method is used to decompose gender wage gaps at different quantiles to determine whether it is the differences in characteristics (levels of covariates) or the unexplained (discrimination) component that drives the sticky floor effect. The paper concludes with a discussion on the possible reasons for observing a sticky floor phenomenon in India. 
+
+\paragraph{Azam and Prakash 2015} In this paper, we examine public–private wage differential among men in India across the entire wage distribution. We find that the raw wage gap between public and private sector is positive across the entire wage distribution in both urban and rural areas. A quantile regression-based decomposition reveals that that the public sector workers enjoy a positive wage premium across the entire wage distribution in both urban and rural areas, although the magnitude of wage premium is smaller at the top quantiles.
+
+\textit{These two papers use quantile regression methods I intent to replicate on the India Human Development Survey Data, which they are not using.}
+
+\paragraph{Banerjee and Knight 1985} This, the pioneering quantitative analysis of caste in the Indian urban labour market, examines the age-old problem of caste in the light of discrimination theory and government policy. Using a survey of workers in Delhi, the gross wage difference between ‘scheduled’ (untouchable) and ‘non-scheduled’ caste is decomposed into its ‘explained’ and ‘discrimination’ components and, from a model of occupation choice, into wage- and job-discrimination. Discrimination is found to exist, and to operate at least in part through the traditional mechanism, \textit{viz.} assignment to jobs, with the scheduled castes entering poorly-paid ‘dead-end’ jobs. It is assisted by methods of recruitment based on contacts, prevalent in the manual occupation, which also cause past discrimination to carry over to the present. Its practice serves the economic interests of those who exercise a taste for discrimination.
+
+\textit{This paper is fundamental to the study of discrimination in Indian economic development. It will serve as useful background.}
+
+\paragraph{Blinder 1973} Regressions explaining the wage rates of white males, black males, and white females are used to analyze the white-black wage differential among men and the male-female wage differential among whites. A distinction is drawn between reduced form and structural wage equations, and both are estimated. They are shown to have very different implications for analyzing the white-black and male-female wage differentials. When the two sets of estimates are synthesized, they jointly imply that 70 percent of the overall race differential and 100 percent of the overall sex differential are ultimately attributable to discrimination of various sorts.
+
+\textit{This paper first proposed the Blinder-Oaxaca decomposition for discrimination, which might be useful for sub-group analysis of discrimination.}
+
+
 \end{document}
