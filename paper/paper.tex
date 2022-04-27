@@ -1,0 +1,108 @@
+\documentclass[12pt]{article}
+
+\usepackage{amsmath, amssymb}
+\usepackage{graphicx}
+\usepackage[round]{natbib}
+
+\usepackage{setspace}
+\onehalfspacing
+\usepackage{sectsty}
+
+\sectionfont{\large}
+\subsectionfont{\normalsize}
+\subsubsectionfont{\normalsize}
+\usepackage{hyperref}
+\hypersetup{colorlinks, citecolor=blue, filecolor=blue, linkcolor=blue, urlcolor=blue}
+
+
+\usepackage{xr}
+%\renewcommand{\thesubsection}{\thesection.\alph{subsection}}
+
+\title{ \vspace*{-2.5cm} \hspace*{-0.5cm}Gendered Wage Discrimination in India: Sticky Floor or Glass Ceiling?}
+
+\author{Luke DiMartino\thanks{Georgetown University}}
+
+\date{\vspace*{.5cm}May 2021 \\ Preliminary and incomplete. Please do not cite or circulate.}
+
+
+\begin{document}
+
+\let\footnoterule\relax
+
+\maketitle
+
+\begin{abstract}
+	Prior analyses of the large \textit{India Human Development Survey} have focused on mean differences of wages between men and women and corresponding decompositions such as the Blinder-Oaxaca method. To investigate the presence of a "sticky floor" or "glass ceiling," the magnitude of wage discrimination at the tails of the wage distribution, this paper uses quantile regression and the Machado-Mata-Melly decomposition to examine wage gaps at different quantiles of the wage distribution.
+\end{abstract}
+\thispagestyle{empty}
+
+\clearpage
+\setcounter{page}{1}
+
+\section{Introduction
+\label{sec:introduction}}
+
+Gender and caste are critical factors in Indian labor markets. 
+
+The seminal work, \citet{BanerjeeandKnight1985} detailed caste-based discrimination in labor markets in India. Also, \citet{Agrawal2014}.
+
+The remainder of this paper proceeds as follows: Section \ref{sec:literature-review} reviews existing literature on wage discrimination in India. Next, Section \ref{sec:methodology} describes the empirical strategy and Section \ref{sec:data} describes the data and procedures to prepare it for modelling. I then present results in Section \ref{sec:results}. Lastly, Section \ref{sec:conclusion} concludes. 
+
+\section{Literature Review
+\label{sec:literature-review}}
+
+\section{Methodology
+\label{sec:methodology}}
+
+\subsection{Blinder-Oaxaca Decomposition
+\label{subsec:BOdecomp}}
+The Blinder-Oaxaca decomposition, first proposed by \citet{Blinder1973} and \citet{Oaxaca1973} considers the gap between mean wages of men and women as the sum of two factors. First, men are, on average, better endowed with covariates like education and experience that increase their productivity and by extension, their wages. Second, men experience greater returns to these covariates (e.g. a greater return for every year of education than women experience). The Blinder-Oaxaca decomposition terms the first the composition effect (the "explained" gap) and the second the wage structure effect (the "unexplained" gap).
+
+Assume that the wages $W$ can be naively and a vector of indepedent controlling variables $X$ by:
+\begin{equation}
+	W_i = \beta_0 + \mathbf{\beta}_k \mathbf{X}_k + u_i 
+.\end{equation}
+
+If the sample can be divided into two groups, $A$ and $B$, then the same equation could be used over subsamples.
+
+\begin{align*}
+	W_{Ai} &= \beta_{A0} + \beta_{A1}X_{1i} + \ldots +  \beta_{Ak}X_{ki} + u_{Ai} \\
+	W_{Bi} &= \beta_{B0} + \beta_{B1}X_{1i} + \ldots + \beta_{Bk}X_{ki} + u_{Bi} \\
+.\end{align*}
+
+Therefore, the mean outcomes are
+\begin{align*}
+	\overline{W}_A &= \mathbf{X'}_{A} \mathbf{\hat{\beta}}_{A} \\
+	\overline{W}_B &= \mathbf{X'}_{B} \mathbf{\hat{\beta}}_{B}
+.\end{align*}
+
+Therefore, the mean difference is
+\begin{equation}
+	\overline{W}_A - \overline{W}_B = \mathbf{X'}_{A} \mathbf{\hat{\beta}}_{A} - \mathbf{X'}_{B} \mathbf{\hat{\beta}}_{B} = \mathbf{X'}_{A}\left(\hat{\beta}_A - \hat{\beta}_B  \right) + \left(\mathbf{X'}_A - \mathbf{X'}_B  \right)  \hat{\beta}_B
+.\end{equation}
+
+The first term is the wage structure effect, describing how the difference in wages is an effect of different coefficient estimates, which are the effects of the control variables like education and experience. The second term is the composition effect, the difference in levels of the predictor variables, like amount of education and experience that determine the composition of each subsample.
+
+\subsection{Quantile Regression
+\label{subsec:quantile-regression}}
+Quantile regression was developed first by \citet{KoenkerandBassett1978}. While ordinary least squares estimates a conditional mean function (i.e. \textit{conditional on the given values for $\mathbf{X'}$ what is the expected value of $Y$?}) quantile regression estimates conditional quantile functions (i.e. \textit{conditional on the given values for $\mathbf{X'}$, what is the expected value in the third quartile of $Y$?}). The insight of quantile regression is that it allows for coefficients to vary by quantile of the wage distribution. This matches economic intuition one might have: in low-wage jobs, employers may value experience more than formal education, but in high-wage managerial jobs, employers might value formal education and experience more equally.
+
+\subsection{Machado-Mata-Melly Decomposition
+\label{subsec:m-m-m-decomposition}}
+\section{Data
+\label{sec:data}}
+
+\section{Results
+\label{sec:results}}
+
+\section{Conclusion\
+\label{sec:conclusion}}
+
+\clearpage
+\begin{singlespace}
+%\bibliographystyle{plainnat}
+%\bibliographystyle{chicago}
+\bibliographystyle{aer}
+\bibliography{paper_bib.bib}
+\end{singlespace}
+\end{document}

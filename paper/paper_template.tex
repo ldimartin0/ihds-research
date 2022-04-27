@@ -1,0 +1,180 @@
+\documentclass[12pt]{article}
+\usepackage[right=1.25in,left=1.25in,top=1.1in,bottom=1.1in]{geometry}
+\usepackage{hyperref}
+\hypersetup{colorlinks, citecolor=blue, filecolor=blue, linkcolor=blue, urlcolor=blue}
+\usepackage{graphicx}
+\usepackage{url}
+\usepackage[round]{natbib}
+\usepackage{amsmath,amsthm} 
+\usepackage{engord}
+\usepackage{float}
+\usepackage{subfig}
+\usepackage{pdflscape}
+\usepackage{booktabs}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.14}
+\pgfplotsset{every axis label/.append style={font=\tiny}}
+\usepackage[labelsep=period]{caption} %% This switches "Table 1: Title" to "Table 1. Title"
+
+\usepackage{amssymb} %% Necessary, just for the \checkmark command  in tables.
+\usepackage{multirow} %% Necessary if we are doing tables in LaTeX
+\usepackage{xr}
+\usepackage{setspace}
+\onehalfspacing
+\usepackage{sectsty}
+
+\sectionfont{\large}
+\subsectionfont{\normalsize}
+\subsubsectionfont{\normalsize}
+
+\newcommand{\specialcell}[2][c]{\begin{tabular}[#1]{@{}l@{}}#2\end{tabular}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\title{ \vspace*{-2.5cm} \hspace*{-0.5cm}The Title of a Terrific Economics Paper: \\ Evidence from a Natural Experiment
+	\footnote{Footnote!}
+}}
+
+\author{Luke DiMartino \thanks{Thanks, Mom!}}
+
+\date{ \vspace*{0.5cm} May, 2021\\
+\textbf{Preliminary and Incomplete. \\ Please do not cite or circulate.}
+} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+\bgroup
+\let\footnoterule\relax
+
+\begin{singlespace}
+\maketitle
+
+
+\begin{abstract}
+    \noindent Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam auctor, dolor a porttitor pulvinar, quam lorem blandit massa, at euismod libero augue eget ex. Morbi et nunc viverra, molestie nunc facilisis, dictum mauris. Donec sapien nunc, dapibus id leo vitae, molestie pulvinar lectus. Integer lobortis ex at eros faucibus iaculis. Pellentesque ut feugiat justo, vitae pharetra erat. Aenean at placerat tortor, eget vehicula purus. Pellentesque vel odio posuere, vestibulum quam ac, congue metus. In hac habitasse platea dictumst.
+\end{abstract}
+\end{singlespace}
+\thispagestyle{empty}
+
+\clearpage
+\egroup
+\setcounter{page}{1}
+
+%% Temporary tool to track how this paper is structured. Feel free to comment in or out. 
+% \tableofcontents
+% \bigskip
+
+\section{Introduction\label{sec:introduction}}
+
+\noindent Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam auctor, dolor a porttitor pulvinar, quam lorem blandit massa, at euismod libero augue eget ex. Morbi et nunc viverra, molestie nunc facilisis, dictum mauris. Donec sapien nunc, dapibus id leo vitae, molestie pulvinar lectus. Integer lobortis ex at eros faucibus iaculis. Pellentesque ut feugiat justo, vitae pharetra erat. Aenean at placerat tortor, eget vehicula purus. Pellentesque vel odio posuere, vestibulum quam ac, congue metus. In hac habitasse platea dictumst.
+
+Nunc mollis ante libero, in dictum erat faucibus at. Integer et elit sed risus posuere porttitor. Proin porttitor velit quis nulla congue, sed euismod nisi semper. Fusce laoreet nunc nulla, eget suscipit nibh accumsan et. Suspendisse vehicula cursus elit, et pharetra nulla aliquam a. Cras ac arcu sit amet purus malesuada vestibulum nec ac risus. Sed cursus sem non diam lacinia, id tincidunt magna tempus. Nunc sollicitudin pulvinar lobortis. Ut bibendum arcu id vulputate scelerisque. Mauris sit amet ullamcorper nibh, eu dapibus ipsum. Duis vehicula augue eget purus luctus, et aliquam erat posuere. Etiam consequat tellus ut orci venenatis condimentum. Donec a malesuada enim, quis elementum quam. Vestibulum consequat maximus bibendum. Nam varius in nunc quis tincidunt.
+
+We also cite papers in this document \citep{Chetty2013}. For instance: \citet{Hansen1992}. So on and so forth\ldots
+
+The remainder of the paper proceeds as follows. Section \ref{sec:background} provides background. We then present our
+empirical results in Section \ref{sec:results}. Finally, Section \ref{sec:conclusion} concludes. 
+
+\section{Background 
+\label{sec:background}}
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam auctor, dolor a porttitor pulvinar, quam lorem blandit massa, at euismod libero augue eget ex. Morbi et nunc viverra, molestie nunc facilisis, dictum mauris. Donec sapien nunc, dapibus id leo vitae, molestie pulvinar lectus. Integer lobortis ex at eros faucibus iaculis. Pellentesque ut feugiat justo, vitae pharetra erat. Aenean at placerat tortor, eget vehicula purus. Pellentesque vel odio posuere, vestibulum quam ac, congue metus. In hac habitasse platea dictumst.
+
+
+Morbi maximus ullamcorper quam, nec sollicitudin ante dignissim in. Phasellus interdum sapien eu fringilla auctor. Nam vel mauris diam. Nullam consectetur tempor semper. Cras ac feugiat mi. Mauris sodales mauris in nulla porttitor iaculis. Aenean at est commodo nulla congue consectetur. Cras vehicula fermentum auctor. Fusce eget massa eget dui hendrerit rutrum non eu ante. Duis purus odio, condimentum eu consectetur ac, egestas non ex.
+
+\input{fig_tex/fig_a_two_panel_example.tex}
+
+
+
+\section{Results \label{sec:results}}
+
+\input{tab_tex/summary_stats.tex}
+
+
+Table \ref{tab:summary_statistics} In imperdiet orci arcu, sed dapibus urna dictum at. Praesent ullamcorper quam sit amet dolor euismod ornare. Vivamus congue metus vel sem varius dignissim. Nam eu efficitur ligula, non maximus odio. Mauris eget porttitor tellus. In interdum leo magna, ut gravida nibh cursus vitae. Nam viverra erat egestas felis euismod bibendum. Donec tempor nunc et nisl interdum placerat. Vivamus et cursus turpis. Morbi et arcu sapien. Suspendisse potenti. Phasellus posuere tristique euismod. Nam malesuada sapien ipsum, ut faucibus ex congue eget. Cras dolor orci, euismod sit amet turpis dictum, scelerisque convallis enim. Suspendisse euismod lacinia ligula a pulvinar.
+
+\input{fig_tex/fig_mainsummary.tex}
+
+Figure \ref{fig:mainsummary} Sed lobortis quam nulla, id pulvinar libero auctor nec. Curabitur vehicula libero quis venenatis ultrices. Aenean ex felis, gravida vel cursus quis, rhoncus at velit. Mauris efficitur elit eu ipsum ultrices finibus. Donec finibus ut ante vel molestie. In et consequat nunc. Sed feugiat interdum mattis. Vivamus ornare molestie justo, sit amet blandit eros malesuada sit amet. Integer accumsan odio eu nibh malesuada, eget scelerisque magna interdum. Sed semper velit purus, eget viverra turpis semper scelerisque. Fusce semper, sapien sit amet convallis maximus, eros elit dignissim metus, vel porta orci tortor non ex. Nam finibus bibendum quam nec pretium. Pellentesque accumsan bibendum vehicula. Etiam vel laoreet purus, nec condimentum sapien.
+
+\input{tab_tex/regressions.tex}
+
+The top panel of Table \ref{tab:regressions} Etiam in dolor convallis, semper ligula non, pretium ligula. Praesent tempor magna eget velit bibendum, vel hendrerit massa feugiat. Suspendisse dui massa, feugiat vitae justo sed, tempus interdum dolor. Etiam sagittis orci non bibendum luctus. Sed tristique eget arcu a varius. Curabitur ligula eros, aliquet quis convallis sed, iaculis ut quam. Duis id elementum eros. Duis vel lacus id dui suscipit accumsan eu eget velit. Duis vulputate hendrerit lectus non pellentesque. Curabitur nec ex ac sapien varius egestas. Quisque tristique scelerisque erat vel ullamcorper. Quisque dapibus consectetur nunc, at convallis nisi faucibus sit amet.
+
+
+\section{Conclusion\label{sec:conclusion}}
+
+Pellentesque porta auctor lectus, non tincidunt nisl accumsan vitae. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Integer vitae pulvinar felis. Integer tincidunt ultrices turpis quis dignissim. Ut hendrerit leo et dictum tincidunt. Nullam malesuada eu felis in convallis. Proin ipsum justo, finibus vitae felis eu, volutpat efficitur libero. Morbi quis odio commodo, fermentum nulla nec, consequat massa. Aliquam pellentesque purus eget diam fermentum, ac ultrices sem suscipit. Proin lorem tellus, vehicula at urna ut, cursus elementum felis. Maecenas ultrices est vel ante bibendum, in porttitor tortor dignissim.
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\clearpage
+\begin{singlespace}
+%\bibliographystyle{plainnat}
+%\bibliographystyle{chicago}
+\bibliographystyle{aer}
+\bibliography{our-cites.bib}
+\end{singlespace}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%% These commands start the appendix and change the Table & Figure numbering
+\newpage
+\appendix
+\setcounter{table}{0}
+\renewcommand{\tablename}{Appendix Table}
+\renewcommand{\figurename}{Appendix Figure}
+\renewcommand{\thetable}{A\arabic{table}}
+\setcounter{figure}{0}
+\renewcommand{\thefigure}{A\arabic{figure}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Appendix Tables and Figures}
+\input{tab_tex/other-regressions.tex}
+
+\newpage 
+\section{Appendix One \label{sec:appendix:first}}
+\renewcommand{\thetable}{B\arabic{table}}
+\setcounter{table}{0}
+\renewcommand{\thefigure}{B\arabic{figure}}
+\setcounter{figure}{0}
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin egestas metus a odio pellentesque, id sollicitudin sem congue. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vivamus ac venenatis nisi. Pellentesque venenatis placerat ante quis rhoncus. Sed non pharetra dui. Fusce interdum nisl turpis, in malesuada metus condimentum eu. Proin ullamcorper, ligula vitae dapibus porta, ex nisl vulputate lectus, quis mattis lorem risus vel neque. Duis tincidunt sagittis lacus. Etiam ut diam tellus. Pellentesque tempor tortor elit, ut volutpat nisi imperdiet ut. Ut vel euismod justo, tincidunt sodales odio. In ac vestibulum urna. Nunc quis dolor sem. Cras nunc orci, vestibulum eget vulputate nec, faucibus eu metus. Etiam a diam eget urna accumsan elementum. Curabitur et sem in lacus ornare vehicula ut eget urna.
+
+In imperdiet orci arcu, sed dapibus urna dictum at. Praesent ullamcorper quam sit amet dolor euismod ornare. Vivamus congue metus vel sem varius dignissim. Nam eu efficitur ligula, non maximus odio. Mauris eget porttitor tellus. In interdum leo magna, ut gravida nibh cursus vitae. Nam viverra erat egestas felis euismod bibendum. Donec tempor nunc et nisl interdum placerat. Vivamus et cursus turpis. Morbi et arcu sapien. Suspendisse potenti. Phasellus posuere tristique euismod. Nam malesuada sapien ipsum, ut faucibus ex congue eget. Cras dolor orci, euismod sit amet turpis dictum, scelerisque convallis enim. Suspendisse euismod lacinia ligula a pulvinar.
+
+Sed lobortis quam nulla, id pulvinar libero auctor nec. Curabitur vehicula libero quis venenatis ultrices. Aenean ex felis, gravida vel cursus quis, rhoncus at velit. Mauris efficitur elit eu ipsum ultrices finibus. Donec finibus ut ante vel molestie. In et consequat nunc. Sed feugiat interdum mattis. Vivamus ornare molestie justo, sit amet blandit eros malesuada sit amet. Integer accumsan odio eu nibh malesuada, eget scelerisque magna interdum. Sed semper velit purus, eget viverra turpis semper scelerisque. Fusce semper, sapien sit amet convallis maximus, eros elit dignissim metus, vel porta orci tortor non ex. Nam finibus bibendum quam nec pretium. Pellentesque accumsan bibendum vehicula. Etiam vel laoreet purus, nec condimentum sapien.
+
+Etiam in dolor convallis, semper ligula non, pretium ligula. Praesent tempor magna eget velit bibendum, vel hendrerit massa feugiat. Suspendisse dui massa, feugiat vitae justo sed, tempus interdum dolor. Etiam sagittis orci non bibendum luctus. Sed tristique eget arcu a varius. Curabitur ligula eros, aliquet quis convallis sed, iaculis ut quam. Duis id elementum eros. Duis vel lacus id dui suscipit accumsan eu eget velit. Duis vulputate hendrerit lectus non pellentesque. Curabitur nec ex ac sapien varius egestas. Quisque tristique scelerisque erat vel ullamcorper. Quisque dapibus consectetur nunc, at convallis nisi faucibus sit amet.
+
+Pellentesque porta auctor lectus, non tincidunt nisl accumsan vitae. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Integer vitae pulvinar felis. Integer tincidunt ultrices turpis quis dignissim. Ut hendrerit leo et dictum tincidunt. Nullam malesuada eu felis in convallis. Proin ipsum justo, finibus vitae felis eu, volutpat efficitur libero. Morbi quis odio commodo, fermentum nulla nec, consequat massa. Aliquam pellentesque purus eget diam fermentum, ac ultrices sem suscipit. Proin lorem tellus, vehicula at urna ut, cursus elementum felis. Maecenas ultrices est vel ante bibendum, in porttitor tortor dignissim.
+
+\input{fig_tex/fig_another_figure.tex}
+
+\newpage
+\section{Appendix Two
+\label{sec:appendix:two}}
+\renewcommand{\thetable}{C\arabic{table}}
+\setcounter{table}{0}
+\renewcommand{\thefigure}{C\arabic{figure}}
+\setcounter{figure}{0}
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin egestas metus a odio pellentesque, id sollicitudin sem congue. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vivamus ac venenatis nisi. Pellentesque venenatis placerat ante quis rhoncus. Sed non pharetra dui. Fusce interdum nisl turpis, in malesuada metus condimentum eu. Proin ullamcorper, ligula vitae dapibus porta, ex nisl vulputate lectus, quis mattis lorem risus vel neque. Duis tincidunt sagittis lacus. Etiam ut diam tellus. Pellentesque tempor tortor elit, ut volutpat nisi imperdiet ut. Ut vel euismod justo, tincidunt sodales odio. In ac vestibulum urna. Nunc quis dolor sem. Cras nunc orci, vestibulum eget vulputate nec, faucibus eu metus. Etiam a diam eget urna accumsan elementum. Curabitur et sem in lacus ornare vehicula ut eget urna.
+
+In imperdiet orci arcu, sed dapibus urna dictum at. Praesent ullamcorper quam sit amet dolor euismod ornare. Vivamus congue metus vel sem varius dignissim. Nam eu efficitur ligula, non maximus odio. Mauris eget porttitor tellus. In interdum leo magna, ut gravida nibh cursus vitae. Nam viverra erat egestas felis euismod bibendum. Donec tempor nunc et nisl interdum placerat. Vivamus et cursus turpis. Morbi et arcu sapien. Suspendisse potenti. Phasellus posuere tristique euismod. Nam malesuada sapien ipsum, ut faucibus ex congue eget. Cras dolor orci, euismod sit amet turpis dictum, scelerisque convallis enim. Suspendisse euismod lacinia ligula a pulvinar.
+
+Sed lobortis quam nulla, id pulvinar libero auctor nec. Curabitur vehicula libero quis venenatis ultrices. Aenean ex felis, gravida vel cursus quis, rhoncus at velit. Mauris efficitur elit eu ipsum ultrices finibus. Donec finibus ut ante vel molestie. In et consequat nunc. Sed feugiat interdum mattis. Vivamus ornare molestie justo, sit amet blandit eros malesuada sit amet. Integer accumsan odio eu nibh malesuada, eget scelerisque magna interdum. Sed semper velit purus, eget viverra turpis semper scelerisque. Fusce semper, sapien sit amet convallis maximus, eros elit dignissim metus, vel porta orci tortor non ex. Nam finibus bibendum quam nec pretium. Pellentesque accumsan bibendum vehicula. Etiam vel laoreet purus, nec condimentum sapien.
+
+Etiam in dolor convallis, semper ligula non, pretium ligula. Praesent tempor magna eget velit bibendum, vel hendrerit massa feugiat. Suspendisse dui massa, feugiat vitae justo sed, tempus interdum dolor. Etiam sagittis orci non bibendum luctus. Sed tristique eget arcu a varius. Curabitur ligula eros, aliquet quis convallis sed, iaculis ut quam. Duis id elementum eros. Duis vel lacus id dui suscipit accumsan eu eget velit. Duis vulputate hendrerit lectus non pellentesque. Curabitur nec ex ac sapien varius egestas. Quisque tristique scelerisque erat vel ullamcorper. Quisque dapibus consectetur nunc, at convallis nisi faucibus sit amet.
+
+Pellentesque porta auctor lectus, non tincidunt nisl accumsan vitae. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Integer vitae pulvinar felis. Integer tincidunt ultrices turpis quis dignissim. Ut hendrerit leo et dictum tincidunt. Nullam malesuada eu felis in convallis. Proin ipsum justo, finibus vitae felis eu, volutpat efficitur libero. Morbi quis odio commodo, fermentum nulla nec, consequat massa. Aliquam pellentesque purus eget diam fermentum, ac ultrices sem suscipit. Proin lorem tellus, vehicula at urna ut, cursus elementum felis. Maecenas ultrices est vel ante bibendum, in porttitor tortor dignissim.
+
+
+
+\end{document}

@@ -1,0 +1,31 @@
+\ifx\undefined\bysame
+\newcommand{\bysame}{\leavevmode\hbox to\leftmargin{\hrulefill\,\,}}
+\fi
+\begin{thebibliography}{xx}
+
+\harvarditem[Agrawal]{Agrawal}{2014}{Agrawal2014}
+{\bf Agrawal, Tushar}, ``Gender and caste-based wage discrimination in India:
+  some recent evidence,'' {\it Journal for Labour Market Research}, 12 2014,
+  {\it 47.}
+
+\harvarditem[Banerjee and Knight]{Banerjee and
+  Knight}{1985}{BanerjeeandKnight1985}
+{\bf Banerjee, Biswajit and J.~B. Knight}, ``Caste discrimination in the Indian
+  urban labour market,'' {\it Journal of Development Economics}, April 1985,
+  {\it 17} (3), 277--307.
+
+\harvarditem[Blinder]{Blinder}{1973}{Blinder1973}
+{\bf Blinder, Alan~S.}, ``Wage Discrimination: Reduced Form and Structural
+  Estimates,'' {\it The Journal of Human Resources}, 1973, {\it 8} (4),
+  436--455.
+
+\harvarditem[Koenker and Bassett]{Koenker and
+  Bassett}{1978}{KoenkerandBassett1978}
+{\bf Koenker, Roger and Gilbert Bassett}, ``Regression Quantiles,'' {\it
+  Econometrica}, 1978, {\it 46} (1), 33--50.
+
+\harvarditem[Oaxaca]{Oaxaca}{1973}{Oaxaca1973}
+{\bf Oaxaca, Ronald}, ``Male-Female Wage Differentials in Urban Labor
+  Markets,'' {\it International Economic Review}, 1973, {\it 14} (3), 693--709.
+
+\end{thebibliography}
