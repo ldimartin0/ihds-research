@@ -1,6 +1,7 @@
 \documentclass[12pt]{article}
 
 \usepackage{amsmath, amssymb}
+\usepackage[right=1.25in,left=1.25in,top=1.1in,bottom=1.1in]{geometry}
 \usepackage{graphicx}
 \usepackage[round]{natbib}
 
@@ -18,35 +19,43 @@
 \usepackage{xr}
 %\renewcommand{\thesubsection}{\thesection.\alph{subsection}}
 
-\title{ \vspace*{-2.5cm} \hspace*{-0.5cm}Gendered Wage Discrimination in India: Sticky Floor or Glass Ceiling?}
+\title{
+%\vspace*{-2.5cm} \hspace*{-0.5cm}
+Gendered Wage Discrimination in India: Sticky Floor or Glass Ceiling?\thanks{Thanks, Mom!}}
 
-\author{Luke DiMartino\thanks{Georgetown University}}
+\author{Luke DiMartino\thanks{Georgetown University. \href{mailto:lad132@georgetown.edu}{lad132@georgetown.edu}}}
 
-\date{\vspace*{.5cm}May 2021 \\ Preliminary and incomplete. Please do not cite or circulate.}
+\date{May 2021 \\
+\vspace*{.3cm}Preliminary and incomplete. Please do not cite or circulate.}
 
 
 \begin{document}
 
+\bgroup
+
 \let\footnoterule\relax
 
+\begin{singlespace}
 \maketitle
 
 \begin{abstract}
-	Prior analyses of the large \textit{India Human Development Survey} have focused on mean differences of wages between men and women and corresponding decompositions such as the Blinder-Oaxaca method. To investigate the presence of a "sticky floor" or "glass ceiling," the magnitude of wage discrimination at the tails of the wage distribution, this paper uses quantile regression and the Machado-Mata-Melly decomposition to examine wage gaps at different quantiles of the wage distribution.
+Prior analyses of the large \textit{India Human Development Survey} have focused on mean differences of wages between men and women and corresponding decompositions such as the Blinder-Oaxaca method. To investigate the presence of a "sticky floor" or "glass ceiling," the magnitude of wage discrimination at the tails of the wage distribution, this paper uses quantile regression and the Machado-Mata-Melly decomposition to examine wage gaps at different quantiles of the wage distribution. *results go here* 
 \end{abstract}
+\end{singlespace}
 \thispagestyle{empty}
 
 \clearpage
+\egroup
 \setcounter{page}{1}
 
 \section{Introduction
 \label{sec:introduction}}
 
-Gender and caste are critical factors in Indian labor markets. 
+*Fake introduction to work with citations*. Gender and caste are critical factors in Indian labor markets. 
 
-The seminal work, \citet{BanerjeeandKnight1985} detailed caste-based discrimination in labor markets in India. Also, \citet{Agrawal2014}.
+The seminal work, \citet{BanerjeeandKnight1985} detailed caste-based discrimination in labor markets in India. Also, \citet{Agrawal2014} exists.
 
-The remainder of this paper proceeds as follows: Section \ref{sec:literature-review} reviews existing literature on wage discrimination in India. Next, Section \ref{sec:methodology} describes the empirical strategy and Section \ref{sec:data} describes the data and procedures to prepare it for modelling. I then present results in Section \ref{sec:results}. Lastly, Section \ref{sec:conclusion} concludes. 
+The remainder of this paper proceeds as follows: Section \ref{sec:literature-review} reviews existing literature on wage discrimination in India. Next, Section \ref{sec:methodology} and Section \ref{sec:data} describe the empirical strategy and the data. I then present results in Section \ref{sec:results}. Lastly, Section \ref{sec:conclusion} concludes. 
 
 \section{Literature Review
 \label{sec:literature-review}}
@@ -85,7 +94,26 @@ The first term is the wage structure effect, describing how the difference in wa
 
 \subsection{Quantile Regression
 \label{subsec:quantile-regression}}
-Quantile regression was developed first by \citet{KoenkerandBassett1978}. While ordinary least squares estimates a conditional mean function (i.e. \textit{conditional on the given values for $\mathbf{X'}$ what is the expected value of $Y$?}) quantile regression estimates conditional quantile functions (i.e. \textit{conditional on the given values for $\mathbf{X'}$, what is the expected value in the third quartile of $Y$?}). The insight of quantile regression is that it allows for coefficients to vary by quantile of the wage distribution. This matches economic intuition one might have: in low-wage jobs, employers may value experience more than formal education, but in high-wage managerial jobs, employers might value formal education and experience more equally.
+Quantile regression was developed first by \citet{KoenkerandBassett1978}. While ordinary least squares estimates a conditional mean function (i.e.\textit{ conditional on the given values for $\mathbf{X'}$ what is the expected value of $Y$?}) quantile regression estimates conditional quantile functions (i.e.\textit{ conditional on the given values for $\mathbf{X'}$, what is the expected third quartile value of $Y$?}). The insight of quantile regression is that it allows for coefficients to vary by quantile of the wage distribution. This matches economic intuition one might have: in low-wage jobs, employers may value experience more and formal education less, but in high-wage managerial jobs, employers might value formal education and experience equally. OLS would obscure the nuances of these effects.
+
+The $\theta$\textsuperscript{th} quantile of the conditional distribution is given by
+\begin{equation}
+	Q_{\theta}\left(Y_i|X_i \right) = X_{i}\beta_{\theta}, \, \theta \in (0, 1)
+.\end{equation}
+
+For a given $\theta$, the estimate of $\beta_{\theta}$ minimizes the sum of deviation,
+\begin{equation}
+	\sum_{i=1}^{n} \rho_{\theta} \left( Y_{i} - X_{i} \beta_{\theta} \right) 
+\end{equation}
+
+where
+\begin{equation}
+	\rho_{\theta} = \begin{cases}
+		\theta\left(u \right)  \text{ for } u > 0 \\
+		\left( 1-\theta \right) u \text{ for } u \leq 0
+	\end{cases}
+.\end{equation}
+
 
 \subsection{Machado-Mata-Melly Decomposition
 \label{subsec:m-m-m-decomposition}}
