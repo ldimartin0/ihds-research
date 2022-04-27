@@ -31,4 +31,4 @@ gen benefits800=(INCBENEFITS>800) if INCBENEFITS<. //benefits threshold of 800 r
 
 * xtset id SURVEY
 
-sqreg lwshourly female i.SURVEY benefits800, q(.1 .2 .3 .4 .5 .6 .7 .8 .9)
+sqreg lwshourly female i.SURVEY benefits800 district, q(.1 .2 .3 .4 .5 .6 .7 .8 .9)
