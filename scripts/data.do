@@ -1,6 +1,6 @@
 clear all
 
-use "data/indiv-appended-long-panel.dta"
+use "data/compressed_indiv_data.dta"
 
 /*
 Creating some utility control variables
@@ -33,20 +33,49 @@ gen benefits800=(INCBENEFITS>800) if INCBENEFITS<. //benefits threshold of 800 r
 gen married = .
 replace married = 1 if RO6 == 0 | RO6 == 1
 replace married = 0 if RO6 > 1 & !missing(RO6)
+label var married "Marital Status"
 
 * ACTIVITY STATUS
 ren RO7 occup_gen
 
 * renaming education vars
 ren ED2 literacy
+label var literacy "Literacy"
+
 ren ED3 english_ability
 ren ED4 schooled
+
 ren ED6 educ_yrs
+label var educ_yrs "Years of Education"
+
 ren ED10 college_subj
 ren ED11 college_or_voc
+
 ren ED12 highest_qual
+label var highest_qual "Highest Degree Acheived"
+
+gen grad_degree = 0
+replace grad_degree = 1 if highest_qual == 5 | highest_qual == 6
+label var grad_degree "Graduate Degree"
+
 ren CS9 english_yrs
 
-compress
+ren RO5 age
+label var age "Age"
+
+gen age_sq = age^2
+
+ren WS4 occup
+label var occup "Occupation"
+
+drop if occup == 27 | occup == 28 | occup == 46 | occup == 47 | occup == 48 | occup == 70 | occup == 58 // eliminate unlabelled occupations
+
+replace occup = 0 if occup == 1 // group physical scientists
+replace occup = 5 if occup == 6 // group life scientists
+replace occup = 13 if occup == 10 | occup == 11 // group social scientists
+drop if occup > 100 // drop fake occupations
+
+
+replace college_subj = 9 if missing(college_subj) & college_or_voc < 1
 
 save "data/clean_indiv_data.dta", replace
