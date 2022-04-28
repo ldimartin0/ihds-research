@@ -1,0 +1,27 @@
+\begin{table}[htbp]\centering
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\caption{Subsample Regressions with Men and Women, $\tau$ = .1}
+\begin{tabular}{l*{2}{c}}
+\hline\hline
+                    &\multicolumn{1}{c}{(1)}&\multicolumn{1}{c}{(2)}\\
+                    &\multicolumn{1}{c}{Men}&\multicolumn{1}{c}{Women}\\
+\hline
+q10                 &                     &                     \\
+Marital Status      &       0.210\sym{***}&      0.0332\sym{**} \\
+                    &     (23.48)         &      (2.90)         \\
+[1em]
+Literacy            &     -0.0975\sym{***}&      -0.105\sym{***}\\
+                    &     (-6.31)         &     (-5.49)         \\
+[1em]
+Years of Education  &      0.0289\sym{***}&      0.0281\sym{***}\\
+                    &     (14.74)         &      (9.56)         \\
+[1em]
+Constant            &       2.316\sym{***}&       2.264\sym{*}  \\
+                    &     (11.64)         &      (2.40)         \\
+\hline
+Observations        &       69679         &       27118         \\
+\hline\hline
+\multicolumn{3}{l}{\footnotesize \textit{t} statistics in parentheses}\\
+\multicolumn{3}{l}{\footnotesize \sym{*} \(p<0.05\), \sym{**} \(p<0.01\), \sym{***} \(p<0.001\)}\\
+\end{tabular}
+\end{table}

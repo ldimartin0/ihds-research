@@ -1,0 +1,33 @@
+\begin{table}[htbp]\centering
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\caption{Subsample Regressions with Men and Women, $\tau$ = .9}
+\begin{tabular}{l*{2}{c}}
+\hline\hline
+                    &\multicolumn{1}{c}{(1)}&\multicolumn{1}{c}{(2)}\\
+                    &\multicolumn{1}{c}{Men}&\multicolumn{1}{c}{Women}\\
+\hline
+q90                 &                     &                     \\
+married             &       0.444\sym{***}&       0.277\sym{***}\\
+                    &     (22.04)         &      (7.05)         \\
+[1em]
+HQ19 11.2 Educ: Literacy&       0.742         &       1.641\sym{***}\\
+                    &      (1.50)         &      (4.91)         \\
+[1em]
+HQ19 11.6 Educ: Completed Years, never,<1=0&       0.104\sym{***}&       0.131\sym{***}\\
+                    &     (21.75)         &     (10.03)         \\
+[1em]
+HQ19 11.1 Educ: Post 2nd subj&      0.0357\sym{***}&      0.0408\sym{***}\\
+                    &      (5.54)         &      (3.40)         \\
+[1em]
+HQ12 7.4 Occupation -job1&    -0.00807\sym{***}&    -0.00974\sym{***}\\
+                    &    (-19.20)         &    (-10.11)         \\
+[1em]
+Constant            &       2.445\sym{***}&       1.162\sym{**} \\
+                    &      (4.98)         &      (3.02)         \\
+\hline
+Observations        &       14112         &        2942         \\
+\hline\hline
+\multicolumn{3}{l}{\footnotesize \textit{t} statistics in parentheses}\\
+\multicolumn{3}{l}{\footnotesize \sym{*} \(p<0.05\), \sym{**} \(p<0.01\), \sym{***} \(p<0.001\)}\\
+\end{tabular}
+\end{table}
