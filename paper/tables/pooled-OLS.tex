@@ -1,0 +1,60 @@
+\begin{table}[htbp]\centering
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\caption{\textbf{Pooled OLS Regression Results}}
+\begin{tabular}{l*{4}{c}}
+\hline\hline
+                &\multicolumn{1}{c}{\textbf{White SE's}}&\multicolumn{1}{c}{\textbf{Clustered SE's}}&\multicolumn{1}{c}{\textbf{Occupation FE's}}&\multicolumn{1}{c}{\textbf{District FE's}}\\
+\hline
+female          &   -0.390\sym{***}&   -0.390\sym{***}&   -0.309\sym{***}&   -0.312\sym{***}\\
+                &(0.00471)         &(0.00508)         &(0.00466)         &(0.00448)         \\
+[1em]
+Literacy        &  -0.0847\sym{***}&  -0.0847\sym{***}&  -0.0274\sym{***}&  -0.0505\sym{***}\\
+                &(0.00747)         &(0.00778)         &(0.00704)         &(0.00657)         \\
+[1em]
+Years of Education&   0.0529\sym{***}&   0.0529\sym{***}&   0.0272\sym{***}&   0.0238\sym{***}\\
+                &(0.000969)         &(0.00101)         &(0.000941)         &(0.000896)         \\
+[1em]
+Marital Status  &   0.0173\sym{**} &   0.0173\sym{**} &   0.0419\sym{***}&   0.0714\sym{***}\\
+                &(0.00562)         &(0.00586)         &(0.00529)         &(0.00496)         \\
+[1em]
+Age             &   0.0377\sym{***}&   0.0377\sym{***}&   0.0285\sym{***}&   0.0221\sym{***}\\
+                &(0.000908)         &(0.000938)         &(0.000854)         &(0.000802)         \\
+[1em]
+Squared Age     &-0.000326\sym{***}&-0.000326\sym{***}&-0.000245\sym{***}&-0.000190\sym{***}\\
+                &(0.0000110)         &(0.0000114)         &(0.0000104)         &(0.00000968)         \\
+[1em]
+Graduate Degree &    0.333\sym{***}&    0.333\sym{***}&    0.215\sym{***}&    0.262\sym{***}\\
+                & (0.0185)         & (0.0191)         & (0.0182)         & (0.0180)         \\
+[1em]
+Program Income  &   -0.112\sym{***}&   -0.112\sym{***}&  -0.0666\sym{***}&  -0.0623\sym{***}\\
+                & (0.0111)         & (0.0112)         & (0.0108)         &(0.00995)         \\
+[1em]
+0               &        0         &        0         &        0         &        0         \\
+                &      (.)         &      (.)         &      (.)         &      (.)         \\
+[1em]
+No English Ability&    0.221\sym{***}&    0.221\sym{***}&    0.127\sym{***}&   0.0725\sym{***}\\
+                &(0.00755)         &(0.00766)         &(0.00712)         &(0.00683)         \\
+[1em]
+Little English Ability&    0.647\sym{***}&    0.647\sym{***}&    0.406\sym{***}&    0.273\sym{***}\\
+                & (0.0138)         & (0.0140)         & (0.0135)         & (0.0133)         \\
+[1em]
+survey          &    0.185\sym{***}&    0.185\sym{***}&    0.177\sym{***}&    0.182\sym{***}\\
+                &(0.00404)         &(0.00363)         &(0.00397)         &(0.00373)         \\
+[1em]
+Constant        &    1.663\sym{***}&    1.663\sym{***}&    2.782\sym{***}&    3.188\sym{***}\\
+                & (0.0161)         & (0.0167)         &  (0.112)         &  (0.116)         \\
+[1em]
+Occupation FE's &       No         &       No         &      Yes         &      Yes         \\
+[1em]
+District FE's   &       No         &       No         &       No         &      Yes         \\
+\hline
+Observations    &    95840         &    95840         &    95840         &    95840         \\
+Adjusted \(R^{2}\)&    0.392         &    0.392         &    0.473         &    0.550         \\
+\textit{AIC}    & 179624.1         & 179624.1         & 165967.7         & 151241.7         \\
+\textit{BIC}    & 179737.7         & 179737.7         & 166905.3         & 155806.5         \\
+F               &   4677.9         &   4128.7         &    809.3         &    259.2         \\
+\hline\hline
+\multicolumn{5}{l}{\footnotesize Standard errors in parentheses}\\
+\multicolumn{5}{l}{\footnotesize \sym{*} \(p<0.05\), \sym{**} \(p<0.01\), \sym{***} \(p<0.001\)}\\
+\end{tabular}
+\end{table}

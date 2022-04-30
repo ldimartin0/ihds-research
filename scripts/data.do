@@ -43,6 +43,10 @@ ren ED2 literacy
 label var literacy "Literacy"
 
 ren ED3 english_ability
+label define eng_abilities 0 "No English Ability"  1 "Little English Ability" 2 "English Fluency"
+label values english_ability eng_abilities
+
+
 ren ED4 schooled
 
 ren ED6 educ_yrs
@@ -80,5 +84,6 @@ replace occup = 5 if occup == 6 // group life scientists
 replace occup = 13 if occup == 10 | occup == 11 // group social scientists
 drop if occup > 100 // drop fake occupations
 
+gen survey = SURVEY - 1
 
 save "data/clean_indiv_data.dta", replace

@@ -7,7 +7,8 @@ drop if missing(lwshourly) | lwshourly > 7 | lwshourly < -1
 
 eststo clear
 
-eststo: sqreg lwshourly married literacy educ_yrs i.occup if female == 0, q(.1)eststo: sqreg lwshourly married literacy educ_yrs i.occup if female == 1, q(.1)
+eststo: sqreg lwshourly married literacy educ_yrs i.occup if female == 0, q(.1)
+eststo: sqreg lwshourly married literacy educ_yrs i.occup if female == 1, q(.1)
 
 esttab * using "paper/tables/lower-tail-gender-comp.tex", label replace //
 	title("Subsample Regressions with Men and Women, $\tau$ = .1") ///
