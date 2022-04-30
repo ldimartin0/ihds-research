@@ -59,14 +59,19 @@ replace grad_degree = 1 if highest_qual == 5 | highest_qual == 6
 label var grad_degree "Graduate Degree"
 
 ren CS9 english_yrs
+label var english_yrs "Years of English Instruction"
 
 ren RO5 age
 label var age "Age"
 
 gen age_sq = age^2
+label var age_sq "Squared Age"
 
 ren WS4 occup
 label var occup "Occupation"
+
+ren IN12Y prog_inc
+label var prog_inc "Program Income"
 
 drop if occup == 27 | occup == 28 | occup == 46 | occup == 47 | occup == 48 | occup == 70 | occup == 58 // eliminate unlabelled occupations
 
@@ -75,7 +80,5 @@ replace occup = 5 if occup == 6 // group life scientists
 replace occup = 13 if occup == 10 | occup == 11 // group social scientists
 drop if occup > 100 // drop fake occupations
 
-
-replace college_subj = 9 if missing(college_subj) & college_or_voc < 1
 
 save "data/clean_indiv_data.dta", replace
