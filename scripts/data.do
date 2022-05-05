@@ -84,4 +84,12 @@ replace occup = 13 if occup == 10 | occup == 11 // group social scientists
 
 gen survey = SURVEY - 1
 
+gen inf_adj_wshourly = WSHOURLY
+replace inf_adj_wshourly = 1.7183*WSHOURLY if survey == 0
+
+gen lwshourly_inf_adj = ln(inf_adj_wshourly)
+
+label var lwshourly_inf_adj "Log inflation-adjusted hourly wages"
+ren WSHOURLY wshourly
+
 save "data/clean_indiv_data.dta", replace

@@ -1,12 +1,12 @@
 # Fdb version 3
-["bibtex paper"] 1651770268 "paper.aux" "paper.bbl" "paper" 1651770816
+["bibtex paper"] 1651775629 "paper.aux" "paper.bbl" "paper" 1651776598
   "/usr/local/texlive/2020/texmf-dist/bibtex/bst/economic/aer.bst" 1389482635 26812 2ae6e48450a8c17a93d98067b7084a7a ""
-  "paper.aux" 1651770816 3936 58bb9300c195c083c141a24af9539c47 "pdflatex"
+  "paper.aux" 1651776592 4198 5e2163d108eba51aa460b76b8637aacc "pdflatex"
   "paper_bib.bib" 1651769908 5967 112cc817b10297eff631bd83b79dba52 ""
   (generated)
-  "paper.blg"
   "paper.bbl"
-["pdflatex"] 1651770815 "paper.tex" "paper.pdf" "paper" 1651770816
+  "paper.blg"
+["pdflatex"] 1651776591 "paper.tex" "paper.pdf" "paper" 1651776598
   "/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2020/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2020/texmf-dist/fonts/tfm/jknappen/ec/tcrm0700.tfm" 1136768653 1536 73da8e8f1d2a4c957d51ca133585586b ""
@@ -117,14 +117,15 @@
   "/usr/local/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1586288239 4811913 0be9a7e86c70a26e5e3042966bcd7097 ""
   "/usr/local/texlive/2020/texmf-var/web2c/pdftex/pdflatex.fmt" 1586288259 2432462 fd0fa20e9a3cb5f8169fd0ba1c955158 ""
   "/usr/local/texlive/2020/texmf.cnf" 1586288231 577 d60164b4589a341208aff7a667fbbdcb ""
-  "paper.aux" 1651770816 3936 58bb9300c195c083c141a24af9539c47 "pdflatex"
-  "paper.bbl" 1651770268 1529 65185f881972dacc990061440ac6eb1c "bibtex paper"
-  "paper.out" 1651770816 799 8bb26e50cf9d89f6eb50f023b629ee4f "pdflatex"
-  "paper.tex" 1651770814 7850 69eaa02cc5eda56f5399854b7fd91608 ""
-  "tables/lower-tail-gender-comp.tex" 1651092416 1233 89b50173c996b5938c05e01ff27b6bbb ""
+  "paper.aux" 1651776592 4198 5e2163d108eba51aa460b76b8637aacc "pdflatex"
+  "paper.bbl" 1651775629 1529 65185f881972dacc990061440ac6eb1c "bibtex paper"
+  "paper.out" 1651776592 872 07d84064441842b859d72418e1754a03 "pdflatex"
+  "paper.tex" 1651775619 8060 fb1344eab22dbe412bf0153ae50577c0 ""
+  "tables/des-stats-1.tex" 1651776590 1959 e559a3da1007fad385eb617831d84f8c ""
+  "tables/des-stats-2.tex" 1651776591 1993 da67d1ca5b7f0a6a7eb486cee54af353 ""
   "tables/upper-tail-gender-comp.tex" 1651091092 1554 cb30a978c5f79d1000421be4b83291a9 ""
   (generated)
-  "paper.out"
-  "paper.aux"
   "paper.pdf"
+  "paper.aux"
   "paper.log"
+  "paper.out"
