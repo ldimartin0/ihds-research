@@ -1,12 +1,12 @@
 # Fdb version 3
-["bibtex paper"] 1651089475 "paper.aux" "paper.bbl" "paper" 1651092425
+["bibtex paper"] 1651770268 "paper.aux" "paper.bbl" "paper" 1651770816
   "/usr/local/texlive/2020/texmf-dist/bibtex/bst/economic/aer.bst" 1389482635 26812 2ae6e48450a8c17a93d98067b7084a7a ""
-  "paper.aux" 1651092418 3490 340573f28a10a624ee6f75bc0cbe0f9b "pdflatex"
-  "paper_bib.bib" 1651030690 4291 863eb43005465e686ddfa99f9ad3b467 ""
+  "paper.aux" 1651770816 3936 58bb9300c195c083c141a24af9539c47 "pdflatex"
+  "paper_bib.bib" 1651769908 5967 112cc817b10297eff631bd83b79dba52 ""
   (generated)
-  "paper.bbl"
   "paper.blg"
-["pdflatex"] 1651092417 "paper.tex" "paper.pdf" "paper" 1651092425
+  "paper.bbl"
+["pdflatex"] 1651770815 "paper.tex" "paper.pdf" "paper" 1651770816
   "/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2020/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2020/texmf-dist/fonts/tfm/jknappen/ec/tcrm0700.tfm" 1136768653 1536 73da8e8f1d2a4c957d51ca133585586b ""
@@ -117,14 +117,14 @@
   "/usr/local/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1586288239 4811913 0be9a7e86c70a26e5e3042966bcd7097 ""
   "/usr/local/texlive/2020/texmf-var/web2c/pdftex/pdflatex.fmt" 1586288259 2432462 fd0fa20e9a3cb5f8169fd0ba1c955158 ""
   "/usr/local/texlive/2020/texmf.cnf" 1586288231 577 d60164b4589a341208aff7a667fbbdcb ""
-  "paper.aux" 1651092418 3490 340573f28a10a624ee6f75bc0cbe0f9b "pdflatex"
-  "paper.bbl" 1651089476 1247 50a1798931ae187f6f03e6b053f7ce8d "bibtex paper"
-  "paper.out" 1651092418 620 bb6afd6b938b7cd664ccc52532dfdfcd "pdflatex"
-  "paper.tex" 1651091113 6810 510a017ccb723f732168f80e7a540f33 ""
+  "paper.aux" 1651770816 3936 58bb9300c195c083c141a24af9539c47 "pdflatex"
+  "paper.bbl" 1651770268 1529 65185f881972dacc990061440ac6eb1c "bibtex paper"
+  "paper.out" 1651770816 799 8bb26e50cf9d89f6eb50f023b629ee4f "pdflatex"
+  "paper.tex" 1651770814 7850 69eaa02cc5eda56f5399854b7fd91608 ""
   "tables/lower-tail-gender-comp.tex" 1651092416 1233 89b50173c996b5938c05e01ff27b6bbb ""
   "tables/upper-tail-gender-comp.tex" 1651091092 1554 cb30a978c5f79d1000421be4b83291a9 ""
   (generated)
+  "paper.out"
   "paper.aux"
   "paper.pdf"
-  "paper.out"
   "paper.log"

@@ -77,12 +77,10 @@ label var occup "Occupation"
 ren IN12Y prog_inc
 label var prog_inc "Program Income"
 
-drop if occup == 27 | occup == 28 | occup == 46 | occup == 47 | occup == 48 | occup == 70 | occup == 58 // eliminate unlabelled occupations
-
 replace occup = 0 if occup == 1 // group physical scientists
 replace occup = 5 if occup == 6 // group life scientists
 replace occup = 13 if occup == 10 | occup == 11 // group social scientists
-drop if occup > 100 // drop fake occupations
+
 
 gen survey = SURVEY - 1
 
