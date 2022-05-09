@@ -85,7 +85,7 @@ replace occup = 13 if occup == 10 | occup == 11 // group social scientists
 gen survey = SURVEY - 1
 
 gen inf_adj_wshourly = WSHOURLY
-replace inf_adj_wshourly = 1.75432*WSHOURLY if survey == 0
+replace inf_adj_wshourly = 1.68032*WSHOURLY if survey == 0
 label var inf_adj_wshourly "Inflation-adjusted hourly wages"
 
 gen lwshourly_inf_adj = ln(inf_adj_wshourly)
