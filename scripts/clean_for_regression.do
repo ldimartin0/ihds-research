@@ -5,9 +5,13 @@ use "data/clean_indiv_data.dta"
 drop if missing(lwshourly)
 dis _N // display how many observations from raw data have hourly wage data
 
+/* add new vars here, and then make sure to drop missing below */
+
+ren GROUPS6 caste
+label var caste "Caste"
 
 gen missing_indep = 0
-replace missing_indep = 1 if occup == 27 | occup == 28 | occup == 46 | occup == 47 | occup == 48 | occup == 70 | occup == 58 | occup > 100 | missing(literacy) | missing(occup) | missing(married) | missing(educ_yrs) | missing(age) | missing(grad_degree) | missing(prog_inc) | missing(english_ability) | missing(district) | missing(survey)
+replace missing_indep = 1 if occup == 27 | occup == 28 | occup == 46 | occup == 47 | occup == 48 | occup == 70 | occup == 58 | occup > 100 | missing(literacy) | missing(occup) | missing(married) | missing(educ_yrs) | missing(age) | missing(grad_degree) | missing(prog_inc) | missing(english_ability) | missing(district) | missing(survey) | missing(caste)
 tab missing_indep
 
 
@@ -21,7 +25,7 @@ Some robustness tests for the missing indep variables. It appears that there is 
 */
 drop if occup == 27 | occup == 28 | occup == 46 | occup == 47 | occup == 48 | occup == 70 | occup == 58 | occup > 100 // drop fake occupations
 
-drop if missing(literacy) | missing(occup) | missing(married) | missing(educ_yrs) | missing(age) | missing(grad_degree) | missing(prog_inc) | missing(english_ability) | missing(district) | missing(survey)
+drop if missing(literacy) | missing(occup) | missing(married) | missing(educ_yrs) | missing(age) | missing(grad_degree) | missing(prog_inc) | missing(english_ability) | missing(district) | missing(survey) | missing(caste)
 
 dis _N
 

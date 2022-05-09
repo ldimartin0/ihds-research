@@ -1,13 +1,15 @@
 clear all
 
-use "data/clean_indiv_data.dta"
-
-drop if missing(lwshourly) | missing(literacy) | missing(occup) | missing(married) | missing(educ_yrs) | missing(age)
+use "data/reg-sample.dta"
 
 qui tab occup, gen(occ)
 qui tab STATEID, gen(stateid)
 qui tab district, gen(dist)
+qui tab caste, gen(castes)
+qui tab english_ability, gen(eng_ab)
 
+
+cdeco lwshourly_inf_adj literacy educ_yrs married age age_sq grad_degree prog_inc eng_ab* occ** dist*** castes*, group(female) method(lpm) nreg(10) reps(10)
 
 *cdeco lwshourly educ_yrs literacy married age occ** dist***, group(female) method(lpm) nreg(10) reps(10) saving("data/counterfactual_test_district_fe") cons_test(.1 .9) noprintdeco
 
