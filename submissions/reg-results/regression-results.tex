@@ -34,12 +34,44 @@
 \setcounter{figure}{0}
 \renewcommand{\thefigure}{A\arabic{figure}}
 
-\section{Appendix Tables and Figures}
-\input{../../paper/tables/pooled-OLS.tex}
+
+\section{Summary}
+
+I am investigating gendered wage gaps in developing India. I am interested in two major aspects of the gaps. First, I am conducting a Machado-Mata decomposition of the wage gap. The MM decomposition builds on the traditional Blinder-Oaxaca decomposition, which splits the difference in means between an advantaged group and a disadvantaged group into a sum of two parts: the difference in endowed characteristics and the difference in returns to those characteristics. For example, men in the United States are on average more educated than women. Knowing only this fact about the two groups, a difference in mean wages is not economically unreasonable --- men are better endowed with characteristics that make them more productive (whether this endowment is systematically unjust or unfair is outside of the scope of this paper). But, men also earn greater returns to these characteristics. For instance, a man experiences greater return for the same graduate degree than a woman. This is economically unreasonable, the so-called "unexplained" part of the gap.
+
+The MM decomposition expands on the Blinder-Oaxaca decomposition by decomposing this gap in a similar manner but at different quantiles of the wage distribution.
+
+I am also interested in the different returns women in particular experience at different quantiles of the wage distribution. As a policymaking tool, this has more obvious implications. Certain covariates may be correlated with higher wages, and causal inference might suggest that in general they raise wages significantly. But, quantile regression allows us to zoom in on certain parts of the distribution to determine whether that effect varies by wage level.
+
+
+\newpage 
+
+\section{Baseline OLS Results}
 
 \newpage
+
+\input{../../paper/tables/pooled-OLS.tex}
+
+This table is a general ordinary least squares regression on the entire dataset. This table demonstrates a few key results. 
+
+\begin{enumerate}
+	\item The naive estimation of the mean wage gap is somewhere between 41\% and 50\%, using exact calculations from the coefficient on female. 
+	\item There is not a dramatic difference between White and clustered standard errors. Comparing columns 1 and 2, the standard errors in the second are slightly larger, but not dramatically and not enough to affect results. This is important because although clustered standard errors are theoretically correct, computing them is infeasible for more complex models presented below.
+	\item Occupation is a massive source of wage inequality. Controlling for it between columns 2 and 3 absorbs a significant amount of the wage gap.
+	\item The coefficient on literacy is negative and statistically significant, suggesting that controlling for all other factors, being literate reduces wages by nearly 8\%. 
+\end{enumerate}
+
+\newpage
+
 \input{../../paper/tables/pooled-OLS-subsample.tex}
 
+This table is a OLS regression on two subsamples, men and women. This is equivalent to using interaction effects with female for every variable, but makes the results a bit more clear. The difference in returns between men and women is considered economically unreasonable, and there are a few variables where this difference is significant. Marital status, in particular, affects men's wages dramatically more than women's, while a graduate degree provides far greater returns to women than to men.
+
+\newpage
+
+\section{Moving Forward}
+
+Moving forward, I would like to potentially add more control variables and fine-tune the more complex models.
 
 \end{document}
 

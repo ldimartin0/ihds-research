@@ -1,7 +1,7 @@
 # Fdb version 3
-["pdflatex"] 1651331217 "regression-results.tex" "regression-results.pdf" "regression-results" 1651331221
-  "../../paper/tables/pooled-OLS-subsample.tex" 1651331215 3648 60e737dc3241647388bf99e89a0039bb ""
-  "../../paper/tables/pooled-OLS.tex" 1651329252 3818 5d653eedea62003afa0985b511373597 ""
+["pdflatex"] 1652074151 "regression-results.tex" "regression-results.pdf" "regression-results" 1652074152
+  "../../paper/tables/pooled-OLS-subsample.tex" 1652074151 2155 6a47561f572cdfaf062b56b621581c2a ""
+  "../../paper/tables/pooled-OLS.tex" 1652073975 3498 6a4b3d678c626401559e577d49946ad9 ""
   "/usr/local/texlive/2020/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -95,9 +95,9 @@
   "/usr/local/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1586288239 4811913 0be9a7e86c70a26e5e3042966bcd7097 ""
   "/usr/local/texlive/2020/texmf-var/web2c/pdftex/pdflatex.fmt" 1586288259 2432462 fd0fa20e9a3cb5f8169fd0ba1c955158 ""
   "/usr/local/texlive/2020/texmf.cnf" 1586288231 577 d60164b4589a341208aff7a667fbbdcb ""
-  "regression-results.aux" 1651331217 1096 0af0065056eb67e1d3c6e245463e30c4 "pdflatex"
-  "regression-results.out" 1651331217 62 414d54c76cfc1b0d6c09b712cbe6bd93 "pdflatex"
-  "regression-results.tex" 1651330829 1026 b5bef7b8a72415801a72d51b9f7a8f18 ""
+  "regression-results.aux" 1652074152 1304 b1e6b0d183567a4900d97237e2a1ffb6 "pdflatex"
+  "regression-results.out" 1652074152 146 90a2fa3257c7f2d48f497d9850d997e3 "pdflatex"
+  "regression-results.tex" 1652074087 4407 9c01fe539b258317c1b58d1722ae408d ""
   (generated)
   "regression-results.log"
   "regression-results.out"

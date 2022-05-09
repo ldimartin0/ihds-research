@@ -1,58 +1,52 @@
 \begin{table}[htbp]\centering
 \def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
 \caption{\textbf{Pooled OLS Subsample Regression Results}}
-\begin{tabular}{l*{4}{c}}
+\begin{tabular}{l*{2}{c}}
 \hline\hline
-                &\multicolumn{2}{c}{Clustered SE's}   &\multicolumn{2}{c}{Full FE's}        \\
-                &\multicolumn{1}{c}{Men}&\multicolumn{1}{c}{Women}&\multicolumn{1}{c}{Men}&\multicolumn{1}{c}{Women}\\
+                &\multicolumn{1}{c}{Men}&\multicolumn{1}{c}{Women}\\
 \hline
-Literacy        &  -0.0819\sym{***}&   -0.122\sym{***}&  -0.0398\sym{***}&  -0.0700\sym{***}\\
-                &(0.00915)         & (0.0156)         &(0.00767)         & (0.0140)         \\
+Literacy        &  -0.0585\sym{***}&   -0.105\sym{***}\\
+                &(0.00790)         & (0.0143)         \\
 [1em]
-Years of Education&   0.0523\sym{***}&   0.0513\sym{***}&   0.0233\sym{***}&   0.0226\sym{***}\\
-                &(0.00112)         &(0.00241)         &(0.000994)         &(0.00226)         \\
+Years of Education&   0.0201\sym{***}&   0.0187\sym{***}\\
+                &(0.00104)         &(0.00230)         \\
 [1em]
-Marital Status  &   0.0383\sym{***}&  -0.0398\sym{***}&   0.0857\sym{***}&   0.0145         \\
-                &(0.00744)         & (0.0104)         &(0.00636)         &(0.00909)         \\
+Marital Status  &    0.114\sym{***}&   0.0130         \\
+                &(0.00660)         &(0.00930)         \\
 [1em]
-Age             &   0.0408\sym{***}&   0.0289\sym{***}&   0.0256\sym{***}&   0.0145\sym{***}\\
-                &(0.00118)         &(0.00161)         &(0.00101)         &(0.00140)         \\
+Age             &   0.0235\sym{***}&   0.0105\sym{***}\\
+                &(0.00105)         &(0.00145)         \\
 [1em]
-Squared Age     &-0.000354\sym{***}&-0.000252\sym{***}&-0.000225\sym{***}&-0.000124\sym{***}\\
-                &(0.0000141)         &(0.0000199)         &(0.0000120)         &(0.0000172)         \\
+Squared Age     &-0.000220\sym{***}&-0.0000970\sym{***}\\
+                &(0.0000125)         &(0.0000179)         \\
 [1em]
-Graduate Degree &    0.301\sym{***}&    0.400\sym{***}&    0.211\sym{***}&    0.409\sym{***}\\
-                & (0.0215)         & (0.0410)         & (0.0205)         & (0.0410)         \\
+Graduate Degree &    0.227\sym{***}&    0.425\sym{***}\\
+                & (0.0214)         & (0.0431)         \\
 [1em]
-Program Income  &   -0.213\sym{***}&  -0.0568\sym{***}&   -0.134\sym{***}&  -0.0200         \\
-                & (0.0172)         & (0.0152)         & (0.0147)         & (0.0138)         \\
+Program Income  &   -0.164\sym{***}&  -0.0798\sym{***}\\
+                & (0.0153)         & (0.0136)         \\
 [1em]
-No English Ability&        0         &        0         &        0         &        0         \\
-                &      (.)         &      (.)         &      (.)         &      (.)         \\
+Little English Ability&   0.0268\sym{***}&   0.0661\sym{**} \\
+                &(0.00752)         & (0.0207)         \\
 [1em]
-Little English Ability&    0.199\sym{***}&    0.347\sym{***}&   0.0629\sym{***}&    0.114\sym{***}\\
-                &(0.00810)         & (0.0222)         &(0.00717)         & (0.0204)         \\
+English Fluency &    0.178\sym{***}&    0.343\sym{***}\\
+                & (0.0150)         & (0.0367)         \\
 [1em]
-English Fluency &    0.597\sym{***}&    0.858\sym{***}&    0.240\sym{***}&    0.396\sym{***}\\
-                & (0.0152)         & (0.0350)         & (0.0143)         & (0.0353)         \\
+Constant        &    3.874\sym{***}&    3.379\sym{***}\\
+                &  (0.133)         &  (0.474)         \\
 [1em]
-survey          &    0.167\sym{***}&    0.241\sym{***}&    0.167\sym{***}&    0.237\sym{***}\\
-                &(0.00426)         &(0.00699)         &(0.00418)         &(0.00678)         \\
+Occupation FE's &      Yes         &      Yes         \\
 [1em]
-Constant        &    1.598\sym{***}&    1.492\sym{***}&    3.154\sym{***}&    2.652\sym{***}\\
-                & (0.0205)         & (0.0285)         &  (0.123)         &  (0.518)         \\
-[1em]
-Occupation FE's &       No         &       No         &      Yes         &      Yes         \\
-[1em]
-District FE's   &       No         &       No         &      Yes         &      Yes         \\
+District FE's   &      Yes         &      Yes         \\
 \hline
-Observations    &    68869         &    26971         &    68869         &    26971         \\
-Adjusted \(R^{2}\)&    0.316         &    0.354         &    0.511         &    0.511         \\
-\textit{AIC}    & 131229.5         &  47643.1         & 108598.6         &  40613.4         \\
-\textit{BIC}    & 131330.0         &  47733.3         & 112985.8         &  44526.0         \\
-F               &   2242.6         &    844.0         &    152.0         &        .         \\
+Observations    &    68798         &    26949         \\
+Adjusted \(R^{2}\)&    0.472         &    0.457         \\
+\textit{AIC}    & 114995.0         &  42140.0         \\
+\textit{BIC}    & 119418.3         &  46076.8         \\
+F               &    130.1         &        .         \\
 \hline\hline
-\multicolumn{5}{l}{\footnotesize Standard errors in parentheses}\\
-\multicolumn{5}{l}{\footnotesize \sym{*} \(p<0.05\), \sym{**} \(p<0.01\), \sym{***} \(p<0.001\)}\\
+\multicolumn{3}{l}{\footnotesize Standard errors in parentheses}\\
+\multicolumn{3}{l}{\footnotesize All models include caste fixed effects.}\\
+\multicolumn{3}{l}{\footnotesize \sym{*} \(p<0.05\), \sym{**} \(p<0.01\), \sym{***} \(p<0.001\)}\\
 \end{tabular}
 \end{table}

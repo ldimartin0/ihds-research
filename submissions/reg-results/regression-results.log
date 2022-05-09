@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  30 APR 2022 11:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  9 MAY 2022 01:29
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -364,44 +364,40 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 LaTeX Font Info:    Trying to load font information for U+msb on input line 29.
  (/usr/local/texlive/2020/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) (../../paper/tables/pooled-OLS.tex
-Overfull \hbox (63.4693pt too wide) in paragraph at lines 4--60
+) [1
+
+{/usr/local/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] (../../paper/tables/pooled-OLS.tex
+Overfull \hbox (63.4693pt too wide) in paragraph at lines 4--55
  [][] 
  []
 
 
-LaTeX Warning: Float too large for page by 78.58922pt on input line 60.
+LaTeX Warning: Float too large for page by 11.58951pt on input line 55.
 
-) [1
-
-{/usr/local/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] (../../paper/tables/pooled-OLS-subsample.tex
-
-LaTeX Warning: Float too large for page by 52.33936pt on input line 58.
-
-)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 44.
- [3]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 44.
+) [3] [4] (../../paper/tables/pooled-OLS-subsample.tex) [5] [6]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 76.
+ [7]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 76.
  (./regression-results.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 44.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 44.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 76.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 76.
 Package rerunfilecheck Info: File `regression-results.out' has not changed.
-(rerunfilecheck)             Checksum: 414D54C76CFC1B0D6C09B712CBE6BD93;62.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 44.
+(rerunfilecheck)             Checksum: 90A2FA3257C7F2D48F497D9850D997E3;146.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 76.
  ) 
 Here is how much of TeX's memory you used:
- 7484 strings out of 480608
- 109341 string characters out of 5903631
+ 7496 strings out of 480608
+ 109429 string characters out of 5903631
  387668 words of memory out of 5000000
- 23225 multiletter control sequences out of 15000+600000
+ 23227 multiletter control sequences out of 15000+600000
  542093 words of font info for 62 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 34i,11n,31p,292b,319s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 34i,11n,31p,1086b,319s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on regression-results.pdf (3 pages, 101835 bytes).
+Output written on regression-results.pdf (7 pages, 110793 bytes).
 PDF statistics:
- 70 PDF objects out of 1000 (max. 8388607)
- 54 compressed objects within 1 object stream
- 7 named destinations out of 1000 (max. 500000)
- 9 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 101 PDF objects out of 1000 (max. 8388607)
+ 81 compressed objects within 1 object stream
+ 17 named destinations out of 1000 (max. 500000)
+ 25 words of extra memory for PDF output out of 10000 (max. 10000000)
 
