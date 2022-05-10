@@ -17,8 +17,10 @@
 \usepackage{makecell}
 \usepackage{xr}
 \usepackage{graphicx}
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usepackage{tablefootnote}
 %\renewcommand{\thesubsection}{\thesection.\alph{subsection}}
-
 
 \title{Baseline Regression Results}
 \author{Luke DiMartino}
@@ -78,25 +80,21 @@ This table is a OLS regression on two subsamples, men and women. This is equival
 	\caption{Coefficients from entire sample across quantiles}
 \end{figure}
 
-This figure is a model for the main figure I will present in the paper. It shows the estimates of coefficients at different conditional quantiles. However, since this is pretty computationally intensive, this image is from an arbitrary 10\% subsample of the dataset, not from women, which is the figure I will present in the final paper.
+This figure is a model for the main figure I will present in the paper. It shows the estimates of coefficients at different conditional quantiles. However, since this is pretty computationally intensive, this image is from an arbitrary 10\% subsample of the dataset, not from women, which is the figure I will present in the final paper. However, it still is indicative of how varied coefficients can be across the wage distribution. A graduate degree seems to be worth substantially less at the high end of the distribution where it is more precisely estimated. Likewise, marriage boosts wages substantially less at the top of the distribution.
+
+\newpage
 
 \begin{figure}
 	\centering
-	\includegraphics[width=.6\textwidth]{../../paper/figures/mm-decomp.png}
+	\includegraphics[width=.6\textwidth]{../../paper/figures/mm-decomp-wordy-syntax.png}
 	\caption{Decomposition of wage gap across quantiles}
 \end{figure}	
 
-This figure shows the decomposition of the wage gap by decile. The second decile suggests a problem in the estimation procedure --- I am working on this. The "effects of coefficients" are the effects of greater returns, while the "effects of characteristics" are the effect on the wage gape cause by differing endowments.
-
-\begin{figure}
-	\centering
-	\includegraphics[width=.6\textwidth]{../../paper/figures/mm-coef-effects.png}
-	\caption{Confidence interval around coefficient effect across quantiles}
-\end{figure}	
+This figure shows the decomposition of the wage gap by half-decile.  The "effects of coefficients" are the effects of greater returns, while the "effects of characteristics" are the effect on the wage gape cause by differing endowments. While the mean difference grows as wage increases, that appears to be primarily a growth in characteristics differences --- the "unexplained discrimination" is constant across the distribution.
 
 \section{Moving Forward}
 
-Moving forward, I would like to potentially add more control variables and fine-tune the more complex models.
+Moving forward, I would like to potentially add more control variables and fine-tune the more complex models. I am reading papers using this data and examining what choices they make when cleaning variables as well. The quantile regression models are highly computationally intensive, and so I would like to use more robust methods to get more precise estimates when I have finalized the specifications.
 
 \end{document}
 
