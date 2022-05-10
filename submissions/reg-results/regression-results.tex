@@ -2,7 +2,6 @@
 
 \usepackage{amsmath, amssymb}
 \usepackage[right=1.25in,left=1.25in,top=1.1in,bottom=1.1in]{geometry}
-\usepackage{graphicx}
 \usepackage[round]{natbib}
 
 \usepackage{setspace}
@@ -17,7 +16,9 @@
 
 \usepackage{makecell}
 \usepackage{xr}
+\usepackage{graphicx}
 %\renewcommand{\thesubsection}{\thesection.\alph{subsection}}
+
 
 \title{Baseline Regression Results}
 \author{Luke DiMartino}
@@ -68,6 +69,30 @@ This table is a general ordinary least squares regression on the entire dataset.
 This table is a OLS regression on two subsamples, men and women. This is equivalent to using interaction effects with female for every variable, but makes the results a bit more clear. The difference in returns between men and women is considered economically unreasonable, and there are a few variables where this difference is significant. Marital status, in particular, affects men's wages dramatically more than women's, while a graduate degree provides far greater returns to women than to men.
 
 \newpage
+
+\section{Quantile Regression Results}
+
+\begin{figure}
+	\centering
+	\includegraphics[width=.6\textwidth]{../../paper/figures/full-sample-quantile-coefficients.png}
+	\caption{Coefficients from entire sample across quantiles}
+\end{figure}
+
+This figure is a model for the main figure I will present in the paper. It shows the estimates of coefficients at different conditional quantiles. However, since this is pretty computationally intensive, this image is from an arbitrary 10\% subsample of the dataset, not from women, which is the figure I will present in the final paper.
+
+\begin{figure}
+	\centering
+	\includegraphics[width=.6\textwidth]{../../paper/figures/mm-decomp.png}
+	\caption{Decomposition of wage gap across quantiles}
+\end{figure}	
+
+This figure shows the decomposition of the wage gap by decile. The second decile suggests a problem in the estimation procedure --- I am working on this. The "effects of coefficients" are the effects of greater returns, while the "effects of characteristics" are the effect on the wage gape cause by differing endowments.
+
+\begin{figure}
+	\centering
+	\includegraphics[width=.6\textwidth]{../../paper/figures/mm-coef-effects.png}
+	\caption{Confidence interval around coefficient effect across quantiles}
+\end{figure}	
 
 \section{Moving Forward}
 

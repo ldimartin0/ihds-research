@@ -1,7 +1,10 @@
 # Fdb version 3
-["pdflatex"] 1652074151 "regression-results.tex" "regression-results.pdf" "regression-results" 1652074152
-  "../../paper/tables/pooled-OLS-subsample.tex" 1652074151 2155 6a47561f572cdfaf062b56b621581c2a ""
-  "../../paper/tables/pooled-OLS.tex" 1652073975 3498 6a4b3d678c626401559e577d49946ad9 ""
+["pdflatex"] 1652144951 "regression-results.tex" "regression-results.pdf" "regression-results" 1652144952
+  "../../paper/figures/full-sample-quantile-coefficients.png" 1652144622 99116 00165a5e1d648403ba1f615591ba8a20 ""
+  "../../paper/figures/mm-coef-effects.png" 1652144510 141447 9e247b0874d8c9507bdd196afe90043e ""
+  "../../paper/figures/mm-decomp.png" 1652144494 101983 3c29b538e335cd752ad8f211295da1ea ""
+  "../../paper/tables/pooled-OLS-subsample.tex" 1652075612 2154 7a194c52538a6405822d397dfb11ca87 ""
+  "../../paper/tables/pooled-OLS.tex" 1652075588 3499 961da3ad6619658cee5a6c6f03015028 ""
   "/usr/local/texlive/2020/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -95,11 +98,11 @@
   "/usr/local/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1586288239 4811913 0be9a7e86c70a26e5e3042966bcd7097 ""
   "/usr/local/texlive/2020/texmf-var/web2c/pdftex/pdflatex.fmt" 1586288259 2432462 fd0fa20e9a3cb5f8169fd0ba1c955158 ""
   "/usr/local/texlive/2020/texmf.cnf" 1586288231 577 d60164b4589a341208aff7a667fbbdcb ""
-  "regression-results.aux" 1652074152 1304 b1e6b0d183567a4900d97237e2a1ffb6 "pdflatex"
-  "regression-results.out" 1652074152 146 90a2fa3257c7f2d48f497d9850d997e3 "pdflatex"
-  "regression-results.tex" 1652074087 4407 9c01fe539b258317c1b58d1722ae408d ""
+  "regression-results.aux" 1652144952 1916 ff0a456220a7ead4a3f6c53dc74f9274 "pdflatex"
+  "regression-results.out" 1652144952 208 ae3adb2323a80158576752e2ae7670dd "pdflatex"
+  "regression-results.tex" 1652144949 5009 cb4a5160ae9e28a3d36653df7fc767ea ""
   (generated)
-  "regression-results.log"
   "regression-results.out"
   "regression-results.aux"
   "regression-results.pdf"
+  "regression-results.log"
