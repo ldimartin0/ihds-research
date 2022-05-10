@@ -46,4 +46,15 @@ sum lwshourly lwshourlyI
 
 drop if missing(lwshourlyI)
 
+drop if age < 15 | age > 65
+
+ren WSHOURS hrs_worked_yr
+
+drop if hrs_worked_yr < 65
+
+replace educ_yrs = educ_yrs + 3 if grad_degree == 1 /* Per Agrawal2014, grad degree is three additional years */
+
+gen exper = age - 5 - educ_yrs /* again, per Agrawal2014 */
+label var exper "Years of Pot. Experience"
+
 save "data/reg-sample.dta", replace
