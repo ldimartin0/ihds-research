@@ -1,52 +1,38 @@
-\begin{table}[htbp]\centering
+\begin{table}[!htbp]\centering
 \def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
 \caption{\textbf{Pooled OLS Subsample Regression Results}}
-\begin{tabular}{l*{2}{c}}
-\hline\hline
+\small\begin{tabular}{@{\hskip\tabcolsep\extracolsep\fill}l*{2}{c}}
+\toprule
                 &\multicolumn{1}{c}{Men}&\multicolumn{1}{c}{Women}\\
-\hline
-Literacy        &  -0.0564\sym{***}&   -0.101\sym{***}\\
-                &(0.00783)         & (0.0142)         \\
-[1em]
-Years of Education&   0.0203\sym{***}&   0.0192\sym{***}\\
-                &(0.00103)         &(0.00228)         \\
-[1em]
-Marital Status  &    0.111\sym{***}&   0.0133         \\
-                &(0.00654)         &(0.00923)         \\
-[1em]
-Age             &   0.0237\sym{***}&   0.0111\sym{***}\\
-                &(0.00104)         &(0.00143)         \\
-[1em]
-Squared Age     &-0.000220\sym{***}&-0.000101\sym{***}\\
-                &(0.0000123)         &(0.0000177)         \\
-[1em]
-Graduate Degree &    0.224\sym{***}&    0.422\sym{***}\\
-                & (0.0212)         & (0.0428)         \\
-[1em]
-Program Income  &   -0.160\sym{***}&  -0.0712\sym{***}\\
-                & (0.0151)         & (0.0135)         \\
-[1em]
-Little English Ability&   0.0306\sym{***}&   0.0711\sym{***}\\
-                &(0.00743)         & (0.0205)         \\
-[1em]
-English Fluency &    0.184\sym{***}&    0.348\sym{***}\\
-                & (0.0148)         & (0.0364)         \\
-[1em]
-Constant        &    3.824\sym{***}&    3.318\sym{***}\\
-                &  (0.132)         &  (0.482)         \\
-[1em]
+\midrule
+Literacy        &  -0.0578\sym{***}&   -0.108\sym{***}\\
+                &(0.00791)         & (0.0145)         \\
+\addlinespace
+Years of Education&   0.0387\sym{***}&   0.0316\sym{***}\\
+                &(0.00163)         &(0.00304)         \\
+\addlinespace
+Years of Pot. Experience&   0.0184\sym{***}&   0.0115\sym{***}\\
+                &(0.00128)         &(0.00170)         \\
+\addlinespace
+Marital Status  &    0.119\sym{***}&   0.0172         \\
+                &(0.00669)         &(0.00952)         \\
+\addlinespace
+Constant        &    3.998\sym{***}&    3.360\sym{***}\\
+                &  (0.132)         &  (0.487)         \\
+\addlinespace
 Occupation FE's &      Yes         &      Yes         \\
-[1em]
+\addlinespace
 District FE's   &      Yes         &      Yes         \\
-\hline
-Observations    &    68798         &    26949         \\
-Adjusted \(R^{2}\)&    0.478         &    0.463         \\
-\textit{AIC}    & 113388.9         &  41596.2         \\
-\textit{BIC}    & 117812.1         &  45533.0         \\
-F               &    132.4         &        .         \\
-\hline\hline
-\multicolumn{3}{l}{\footnotesize Standard errors in parentheses}\\
-\multicolumn{3}{l}{\footnotesize All models include caste fixed effects.}\\
-\multicolumn{3}{l}{\footnotesize \sym{*} \(p<0.05\), \sym{**} \(p<0.01\), \sym{***} \(p<0.001\)}\\
+\midrule
+Observations    &    67177         &    26205         \\
+Adjusted \(R^{2}\)&    0.479         &    0.467         \\
+\textit{AIC}    & 110536.4         &  40562.5         \\
+\textit{BIC}    & 114948.1         &  44477.7         \\
+F               &    131.2         &        .         \\
+\bottomrule
+\multicolumn{3}{p{\linewidth}}{\footnotesize Standard errors in parentheses}\\
+\multicolumn{3}{p{\linewidth}}{\footnotesize All models include caste fixed effects.}\\
+\multicolumn{3}{p{\linewidth}}{\footnotesize Additional controls include squared age, indicators for graduate degree holders, program income, little english ability, and english fluency.}\\
+\multicolumn{3}{p{\linewidth}}{\footnotesize \sym{*} \(p<0.05\), \sym{**} \(p<0.01\), \sym{***} \(p<0.001\)}\\
 \end{tabular}
 \end{table}

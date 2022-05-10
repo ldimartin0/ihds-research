@@ -5,44 +5,46 @@ The style file: aer.bst
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: paper_bib.bib
-You've used 6 entries,
+Warning--I didn't find a database entry for "Khanna2012"
+You've used 10 entries,
             2984 wiz_defined-function locations,
-            702 strings with 5464 characters,
-and the built_in function-call counts, 5031 in all, are:
-= -- 854
-> -- 231
-< -- 75
-+ -- 63
-- -- 36
-* -- 298
-:= -- 1157
-add.period$ -- 6
-call.type$ -- 6
-change.case$ -- 42
-chr.to.int$ -- 6
-cite$ -- 6
-duplicate$ -- 65
-empty$ -- 161
-format.name$ -- 123
-if$ -- 1260
+            738 strings with 6215 characters,
+and the built_in function-call counts, 8584 in all, are:
+= -- 1455
+> -- 402
+< -- 130
++ -- 116
+- -- 64
+* -- 520
+:= -- 1946
+add.period$ -- 11
+call.type$ -- 10
+change.case$ -- 70
+chr.to.int$ -- 10
+cite$ -- 10
+duplicate$ -- 109
+empty$ -- 276
+format.name$ -- 216
+if$ -- 2166
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 6
-newline$ -- 24
-num.names$ -- 72
-pop$ -- 85
+missing$ -- 10
+newline$ -- 37
+num.names$ -- 120
+pop$ -- 143
 preamble$ -- 1
-purify$ -- 48
+purify$ -- 80
 quote$ -- 0
 skip$ -- 0
 stack$ -- 0
-substring$ -- 181
-swap$ -- 24
+substring$ -- 310
+swap$ -- 40
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 24
+type$ -- 40
 warning$ -- 0
-while$ -- 69
+while$ -- 113
 width$ -- 0
-write$ -- 107
+write$ -- 178
+(There was 1 warning)

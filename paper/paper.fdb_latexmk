@@ -1,12 +1,12 @@
 # Fdb version 3
-["bibtex paper"] 1651775629 "paper.aux" "paper.bbl" "paper" 1651776598
+["bibtex paper"] 1652206703 "paper.aux" "paper.bbl" "paper" 1652206778
   "/usr/local/texlive/2020/texmf-dist/bibtex/bst/economic/aer.bst" 1389482635 26812 2ae6e48450a8c17a93d98067b7084a7a ""
-  "paper.aux" 1651776592 4198 5e2163d108eba51aa460b76b8637aacc "pdflatex"
-  "paper_bib.bib" 1651769908 5967 112cc817b10297eff631bd83b79dba52 ""
+  "paper.aux" 1652206778 4284 c14951d9f678e760e25f718d8761b48c "pdflatex"
+  "paper_bib.bib" 1652206691 8046 0f59afd3e0a14f7cab937b6284e7a701 ""
   (generated)
-  "paper.bbl"
   "paper.blg"
-["pdflatex"] 1651776591 "paper.tex" "paper.pdf" "paper" 1651776598
+  "paper.bbl"
+["pdflatex"] 1652206777 "paper.tex" "paper.pdf" "paper" 1652206778
   "/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2020/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2020/texmf-dist/fonts/tfm/jknappen/ec/tcrm0700.tfm" 1136768653 1536 73da8e8f1d2a4c957d51ca133585586b ""
@@ -117,15 +117,14 @@
   "/usr/local/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1586288239 4811913 0be9a7e86c70a26e5e3042966bcd7097 ""
   "/usr/local/texlive/2020/texmf-var/web2c/pdftex/pdflatex.fmt" 1586288259 2432462 fd0fa20e9a3cb5f8169fd0ba1c955158 ""
   "/usr/local/texlive/2020/texmf.cnf" 1586288231 577 d60164b4589a341208aff7a667fbbdcb ""
-  "paper.aux" 1651776592 4198 5e2163d108eba51aa460b76b8637aacc "pdflatex"
-  "paper.bbl" 1651775629 1529 65185f881972dacc990061440ac6eb1c "bibtex paper"
-  "paper.out" 1651776592 872 07d84064441842b859d72418e1754a03 "pdflatex"
-  "paper.tex" 1651775619 8060 fb1344eab22dbe412bf0153ae50577c0 ""
-  "tables/des-stats-1.tex" 1651776590 1959 e559a3da1007fad385eb617831d84f8c ""
-  "tables/des-stats-2.tex" 1651776591 1993 da67d1ca5b7f0a6a7eb486cee54af353 ""
+  "paper.aux" 1652206778 4284 c14951d9f678e760e25f718d8761b48c "pdflatex"
+  "paper.bbl" 1652206704 2613 6fcd78781e0f6eea1abfa53081d15955 "bibtex paper"
+  "paper.out" 1652206778 818 1fa0e10b3c57d9f7762ee4dc99c6d1ff "pdflatex"
+  "paper.tex" 1652206776 9767 b728ec461204185bee5aa9b26153f640 ""
+  "tables/des-stats-2.tex" 1652206591 2171 79911467be3edf32016fd11399b1339b ""
   "tables/upper-tail-gender-comp.tex" 1651091092 1554 cb30a978c5f79d1000421be4b83291a9 ""
   (generated)
-  "paper.pdf"
-  "paper.aux"
   "paper.log"
   "paper.out"
+  "paper.pdf"
+  "paper.aux"

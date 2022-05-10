@@ -51,14 +51,19 @@ Prior analyses of the large \textit{India Human Development Survey} have focused
 \section{Introduction
 \label{sec:introduction}}
 
-*Fake introduction to work with citations*. Gender and caste are critical factors in Indian labor markets. 
+Gender wage discrimination has long been the subject of political and scholarly debate because the removal of discriminatory barriers has the power to enhance economic development. While economists explored the paradoxes of wage discrimination primarily in developing countries \citep{BlauKahn}, wage discrimination wage largely ignored elsewhere. 
 
-The seminal work, \citet{BanerjeeandKnight1985} detailed caste-based discrimination in labor markets in India. Also, \citet{Agrawal2014} exists.
+The body of empirical literature examining wage discrimination in India has primarily focused on estimations of the wage gap in general and on the returns to additional years of education. In their seminal work, \citet{BanerjeeandKnight1985} examined caste-based discrimination. Research on gender wage discrimination has relied upon the Indian National Sample Survey \citet{BhaumikChakrabarty}  \citet{Agrawal2014} exists.
 
-The remainder of this paper proceeds as follows: Section \ref{sec:literature-review} reviews existing literature on wage discrimination in India. Next, Section \ref{sec:methodology} and Section \ref{sec:data} describe the empirical strategy and the data. I then present results in Section \ref{sec:results}. Lastly, Section \ref{sec:conclusion} concludes. 
+While mean gaps are important, newer methods for decomposing differences go beyond single-statistic measures because mean differences may not be consistent across the wage distribution. \citet{Jenkins1994} goes so far as to criticize the single-statistic measure as inadequate for understanding the reality of discrimination. 
 
-\section{Literature Review
-\label{sec:literature-review}}
+New research like attempts to measure and decompose gaps and estimate coefficients across the wage distribution. This method has been applied for public-private wage differences \citep{AzamPrakash2015} and for wage di
+
+In this paper, I conduct a distributional analysis of gender wage gaps using wage data from the India Human Development Survey. The methodology, for the most part, mirrors the implementation of the Machado-Mata decomposition in \citet{Khanna2012}, which analyzes the Indian National Sample Survey.
+
+
+The remainder of this paper proceeds as follows: Section \ref{sec:methodology} and Section \ref{sec:data} describe the empirical strategy and the data. I then present results in Section \ref{sec:results}. Lastly, Section \ref{sec:conclusion} concludes. 
+
 
 \section{Methodology
 \label{sec:methodology}}
@@ -126,17 +131,17 @@ The Machado-Mata decomposition, first developed by \citet{MachadoMata2005}, is a
 \subsection{Data}
 To investigate gendered wage gaps, I use individual-level data from the India Human Development Survey (IHDS). The IHDS is a survey jointly conducted by the National Council of Applied Economic Research (NCAER) in Delhi; Univerity of Maryland, College Park; Indiana University; and the University of Michigan. It is a nationally-representative panel survey of more than 42,000 households and 420,311 individuals with an 85\% reinterview rate. The first set of interviews, IHDS 1, was conducted in 2004 and 2005. The second set of interviews, IHDS 2, was conducted in 2011 and 2012.
 
+The sample is 
+
 \subsection{Variables}
 
-Of the 420,311 individuals, 97,413 observations report hourly wages. Another 1,557 are missing data for relevant regressors.
+The independent variable of interest is hourly wages. XXX outliers were trimmed, defined as those observations either below the 25\textsuperscript{th} income percentile less three times the interquartile range or greater than the 75\textsuperscript{th} income percentile plus three times the interquartile range, to reduce influential points and ensure misreported data did not affect results.
 
-The dependent variable of interest is \textit{female}, a dummy variable for sex. 
-
-
+The grouping variable of interest is a \textit{female}, an indicator for women. Independent variables of interest include \textit{age}, \textit{years of education}, \textit{marital status}, and \textit{literacy} --- all self-explanatory.
 
 \subsection{Descriptive Statistics}
 
-
+Summary statistics of the sample, and subsamples of men and women are presented in Table 1. 
 
 \section{Results
 \label{sec:results}}
@@ -164,7 +169,7 @@ The dependent variable of interest is \textit{female}, a dummy variable for sex.
 
 \section{Appendix Tables and Figures}
 \subsection{Descriptive Statistics}
-\input{tables/des-stats-1.tex}
+
 \input{tables/des-stats-2.tex}
 
 \newpage
