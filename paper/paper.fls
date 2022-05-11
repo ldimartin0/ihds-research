@@ -94,6 +94,8 @@ INPUT /usr/local/texlive/2020/texmf-dist/tex/generic/uniquecounter/uniquecounter
 INPUT /usr/local/texlive/2020/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
 INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/tools/xr.sty
 INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/tools/xr.sty
+INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/booktabs/booktabs.sty
+INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/booktabs/booktabs.sty
 INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
 INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
 INPUT paper.aux
@@ -178,13 +180,13 @@ INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmbx8.tfm
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmbx6.tfm
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmti12.tfm
-INPUT paper.bbl
-INPUT paper.bbl
-INPUT tables/des-stats-2.tex
-INPUT tables/des-stats-2.tex
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmbx7.tfm
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmbx5.tfm
+INPUT paper.bbl
+INPUT paper.bbl
+INPUT tables/des-stats-2.tex
+INPUT tables/des-stats-2.tex
 INPUT tables/upper-tail-gender-comp.tex
 INPUT tables/upper-tail-gender-comp.tex
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmti10.tfm
@@ -201,6 +203,7 @@ INPUT /usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pf
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb
+INPUT /usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb

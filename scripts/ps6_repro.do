@@ -2,7 +2,9 @@ clear all
 
 /*** This is a messy do-file that reproduces the results for problem set 6. I have this script organized into many different modular scripts. The results are displayed with esttab, my preferred table-rendering package for Stata. Since I export straight to LaTeX, the tables might get weird.
 
-The quantile regressions take about 8 hours to fit (on my 2GHz i5 + 16 GB 3733 MHz 2020 Mac) so I did not bother including the code for them.
+The quantile regressions take about 8 hours to fit (on my 2GHz i5 + 16 GB 3733 MHz 2020 Mac) so I did not bother including the code for them. Regardless, the scripts are publicly accessible on my GitHub here:
+
+https://github.com/ldimartin0/ihds-research/tree/main/scripts
 ***/
 
 

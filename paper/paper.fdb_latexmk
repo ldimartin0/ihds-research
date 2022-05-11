@@ -1,12 +1,12 @@
 # Fdb version 3
-["bibtex paper"] 1652206703 "paper.aux" "paper.bbl" "paper" 1652206778
+["bibtex paper"] 1652212003 "paper.aux" "paper.bbl" "paper" 1652212819
   "/usr/local/texlive/2020/texmf-dist/bibtex/bst/economic/aer.bst" 1389482635 26812 2ae6e48450a8c17a93d98067b7084a7a ""
-  "paper.aux" 1652206778 4284 c14951d9f678e760e25f718d8761b48c "pdflatex"
+  "paper.aux" 1652212818 4392 ba496146ace3dec381472aa32ce9abbc "pdflatex"
   "paper_bib.bib" 1652206691 8046 0f59afd3e0a14f7cab937b6284e7a701 ""
   (generated)
   "paper.blg"
   "paper.bbl"
-["pdflatex"] 1652206777 "paper.tex" "paper.pdf" "paper" 1652206778
+["pdflatex"] 1652212818 "paper.tex" "paper.pdf" "paper" 1652212819
   "/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2020/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2020/texmf-dist/fonts/tfm/jknappen/ec/tcrm0700.tfm" 1136768653 1536 73da8e8f1d2a4c957d51ca133585586b ""
@@ -49,6 +49,7 @@
   "/usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1248133631 35752 024fb6c41858982481f6968b5fc26508 ""
   "/usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb" 1248133631 32722 d7379af29a190c3f453aba36302ff5a9 ""
   "/usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb" 1248133631 32362 179c33bbf43f19adbb3825bb4e36e57a ""
+  "/usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb" 1248133631 32762 224316ccc9ad3ca0423a14971cfa7fc1 ""
   "/usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb" 1248133631 32726 0a1aea6fcd6468ee2cf64d891f5c43c8 ""
   "/usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1248133631 32569 5e5ddc8df908dea60932f3c484a54c0d ""
   "/usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb" 1248133631 32716 08e384dc442464e7285e891af9f45947 ""
@@ -86,6 +87,7 @@
   "/usr/local/texlive/2020/texmf-dist/tex/latex/auxhook/auxhook.sty" 1576625391 3935 57aa3c3e203a5c2effb4d2bd2efbc323 ""
   "/usr/local/texlive/2020/texmf-dist/tex/latex/base/article.cls" 1580683321 20023 e427dd9e17e239bf926ef3aab67fe35e ""
   "/usr/local/texlive/2020/texmf-dist/tex/latex/base/size12.clo" 1580683321 8447 5c4b8ee712f8e349df2722115bc8c513 ""
+  "/usr/local/texlive/2020/texmf-dist/tex/latex/booktabs/booktabs.sty" 1579038678 6078 f1cb470c9199e7110a27851508ed7a5c ""
   "/usr/local/texlive/2020/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty" 1579991033 13886 d1306dcf79a944f6988e688c1785f9ce ""
   "/usr/local/texlive/2020/texmf-dist/tex/latex/geometry/geometry.sty" 1578002852 41601 9cf6c5257b1bc7af01a58859749dd37a ""
   "/usr/local/texlive/2020/texmf-dist/tex/latex/graphics-cfg/color.cfg" 1459978653 1213 620bba36b25224fa9b7e1ccb4ecb76fd ""
@@ -117,14 +119,14 @@
   "/usr/local/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1586288239 4811913 0be9a7e86c70a26e5e3042966bcd7097 ""
   "/usr/local/texlive/2020/texmf-var/web2c/pdftex/pdflatex.fmt" 1586288259 2432462 fd0fa20e9a3cb5f8169fd0ba1c955158 ""
   "/usr/local/texlive/2020/texmf.cnf" 1586288231 577 d60164b4589a341208aff7a667fbbdcb ""
-  "paper.aux" 1652206778 4284 c14951d9f678e760e25f718d8761b48c "pdflatex"
-  "paper.bbl" 1652206704 2613 6fcd78781e0f6eea1abfa53081d15955 "bibtex paper"
-  "paper.out" 1652206778 818 1fa0e10b3c57d9f7762ee4dc99c6d1ff "pdflatex"
-  "paper.tex" 1652206776 9767 b728ec461204185bee5aa9b26153f640 ""
-  "tables/des-stats-2.tex" 1652206591 2171 79911467be3edf32016fd11399b1339b ""
+  "paper.aux" 1652212818 4392 ba496146ace3dec381472aa32ce9abbc "pdflatex"
+  "paper.bbl" 1652212003 2613 6fcd78781e0f6eea1abfa53081d15955 "bibtex paper"
+  "paper.out" 1652212818 818 1fa0e10b3c57d9f7762ee4dc99c6d1ff "pdflatex"
+  "paper.tex" 1652212816 10915 5b221ef1d870173557af7a260baf2292 ""
+  "tables/des-stats-2.tex" 1652211307 1911 534aab142a5b79846602fc4e29703a71 ""
   "tables/upper-tail-gender-comp.tex" 1651091092 1554 cb30a978c5f79d1000421be4b83291a9 ""
   (generated)
-  "paper.log"
+  "paper.aux"
   "paper.out"
   "paper.pdf"
-  "paper.aux"
+  "paper.log"

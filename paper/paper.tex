@@ -17,6 +17,7 @@
 
 
 \usepackage{xr}
+\usepackage{booktabs}
 %\renewcommand{\thesubsection}{\thesection.\alph{subsection}}
 
 \title{
@@ -51,9 +52,9 @@ Prior analyses of the large \textit{India Human Development Survey} have focused
 \section{Introduction
 \label{sec:introduction}}
 
-Gender wage discrimination has long been the subject of political and scholarly debate because the removal of discriminatory barriers has the power to enhance economic development. While economists explored the paradoxes of wage discrimination primarily in developing countries \citep{BlauKahn}, wage discrimination wage largely ignored elsewhere. 
+Gender wage discrimination has long been the subject of political and scholarly debate because the removal of discriminatory barriers has the power to enhance economic development. While economists explored the paradoxes of wage discrimination primarily in developing countries \citep{BlauKahn}, wage discrimination was largely ignored elsewhere. 
 
-The body of empirical literature examining wage discrimination in India has primarily focused on estimations of the wage gap in general and on the returns to additional years of education. In their seminal work, \citet{BanerjeeandKnight1985} examined caste-based discrimination. Research on gender wage discrimination has relied upon the Indian National Sample Survey \citet{BhaumikChakrabarty}  \citet{Agrawal2014} exists.
+Since then, the body of empirical literature examining wage discrimination in India has primarily focused on estimations of the wage gap in general and on the returns to additional years of education. In their seminal work, \citet{BanerjeeandKnight1985} examined the effects of caste-based discrimination. Research on gender wage discrimination has relied upon the Indian National Sample Survey \citet{BhaumikChakrabarty}  \citet{Agrawal2014} exists.
 
 While mean gaps are important, newer methods for decomposing differences go beyond single-statistic measures because mean differences may not be consistent across the wage distribution. \citet{Jenkins1994} goes so far as to criticize the single-statistic measure as inadequate for understanding the reality of discrimination. 
 
@@ -72,7 +73,7 @@ The remainder of this paper proceeds as follows: Section \ref{sec:methodology} a
 \label{subsec:BOdecomp}}
 The Blinder-Oaxaca decomposition, first proposed by \citet{Blinder1973} and \citet{Oaxaca1973} considers the gap between mean wages of men and women as the sum of two factors. First, men are, on average, better endowed with covariates like education and experience that increase their productivity and by extension, their wages. Second, men experience greater returns to these covariates (e.g. a greater return for every year of education than women experience). The Blinder-Oaxaca decomposition terms the first the composition effect (the "explained" gap) and the second the wage structure effect (the "unexplained" gap).
 
-Assume that the wages $W$ can be naively and a vector of indepedent controlling variables $X$ by:
+Assume that the wages $W$ can be naively estimated with a vector of independent controlling variables $X$ by:
 \begin{equation}
 	W_i = \beta_0 + \mathbf{\beta}_k \mathbf{X}_k + u_i 
 .\end{equation}
@@ -131,17 +132,16 @@ The Machado-Mata decomposition, first developed by \citet{MachadoMata2005}, is a
 \subsection{Data}
 To investigate gendered wage gaps, I use individual-level data from the India Human Development Survey (IHDS). The IHDS is a survey jointly conducted by the National Council of Applied Economic Research (NCAER) in Delhi; Univerity of Maryland, College Park; Indiana University; and the University of Michigan. It is a nationally-representative panel survey of more than 42,000 households and 420,311 individuals with an 85\% reinterview rate. The first set of interviews, IHDS 1, was conducted in 2004 and 2005. The second set of interviews, IHDS 2, was conducted in 2011 and 2012.
 
-The sample is 
 
 \subsection{Variables}
 
-The independent variable of interest is hourly wages. XXX outliers were trimmed, defined as those observations either below the 25\textsuperscript{th} income percentile less three times the interquartile range or greater than the 75\textsuperscript{th} income percentile plus three times the interquartile range, to reduce influential points and ensure misreported data did not affect results.
+The dependent variable of interest is the natural logarithm of inflation-adjusted hourly wages. For robustness, 11 outliers were trimmed, defined as those observations either below the 25\textsuperscript{th} income percentile less three times the interquartile range or greater than the 75\textsuperscript{th} income percentile plus three times the interquartile range. By author's calculations from the Wholesale Price Index, the rupee inflation rate from 2005 to 2012 was 68.032\%, an adjustment that is applied to price data collected in 2005. Unreported OLS estimations including an indicator for survey period suggested an in-sample wage inflation rate of 70-78\%.
 
-The grouping variable of interest is a \textit{female}, an indicator for women. Independent variables of interest include \textit{age}, \textit{years of education}, \textit{marital status}, and \textit{literacy} --- all self-explanatory.
+The grouping variable of interest is a \textit{female}, an indicator for women. Independent variables of interest include \textit{age}, \textit{years of education}, and indicators for marriage and literacy: \textit{marital status}, and \textit{literacy} --- all self-explanatory. Again following the method of \citet{Agrawal2014}, three years of education were added for respondents who reported graduate degrees, because the original data were censored at bachelor's. Likewise, years of experience can only be inferred by a proxy \textit{years of potential experience}, which is calculated as age minus five years (to account for years before education) minus years of education.\footnote{It is assumed that paid work begins immediately after education finishes.}
 
 \subsection{Descriptive Statistics}
 
-Summary statistics of the sample, and subsamples of men and women are presented in Table 1. 
+Sample summary statistics are presented in \ref{tab:1}. The sample is 93382 observations, about 28\% of whom are women. Respondents outside the working age of 15 to 65 and those working less than 240 hours per year were excluded, in line with the method employed by \citet{Agrawal2014}. Summary statistics of the sample, and subsamples of men and women are presented in Table 1. 
 
 \section{Results
 \label{sec:results}}
@@ -171,7 +171,7 @@ Summary statistics of the sample, and subsamples of men and women are presented 
 \subsection{Descriptive Statistics}
 
 \input{tables/des-stats-2.tex}
-
+\label{tab:1}
 \newpage
 \input{tables/upper-tail-gender-comp.tex}
 
