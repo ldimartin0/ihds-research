@@ -6,45 +6,45 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: paper_bib.bib
 Warning--I didn't find a database entry for "Khanna2012"
-You've used 10 entries,
+You've used 12 entries,
             2984 wiz_defined-function locations,
-            738 strings with 6215 characters,
-and the built_in function-call counts, 8584 in all, are:
-= -- 1455
-> -- 402
-< -- 130
-+ -- 116
-- -- 64
-* -- 520
-:= -- 1946
-add.period$ -- 11
-call.type$ -- 10
-change.case$ -- 70
-chr.to.int$ -- 10
-cite$ -- 10
-duplicate$ -- 109
-empty$ -- 276
-format.name$ -- 216
-if$ -- 2166
+            754 strings with 6548 characters,
+and the built_in function-call counts, 10369 in all, are:
+= -- 1742
+> -- 494
+< -- 158
++ -- 146
+- -- 80
+* -- 636
+:= -- 2345
+add.period$ -- 13
+call.type$ -- 12
+change.case$ -- 84
+chr.to.int$ -- 12
+cite$ -- 12
+duplicate$ -- 131
+empty$ -- 336
+format.name$ -- 260
+if$ -- 2613
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 10
-newline$ -- 37
-num.names$ -- 120
-pop$ -- 143
+missing$ -- 12
+newline$ -- 43
+num.names$ -- 144
+pop$ -- 173
 preamble$ -- 1
-purify$ -- 80
+purify$ -- 96
 quote$ -- 0
 skip$ -- 0
 stack$ -- 0
-substring$ -- 310
-swap$ -- 40
+substring$ -- 382
+swap$ -- 48
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 40
+type$ -- 48
 warning$ -- 0
-while$ -- 113
+while$ -- 135
 width$ -- 0
-write$ -- 178
+write$ -- 212
 (There was 1 warning)

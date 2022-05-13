@@ -6,7 +6,7 @@
 \usepackage[round]{natbib}
 
 \usepackage{setspace}
-\onehalfspacing
+\doublespacing
 \usepackage{sectsty}
 
 \sectionfont{\large}
@@ -22,7 +22,7 @@
 
 \title{
 %\vspace*{-2.5cm} \hspace*{-0.5cm}
-Gendered Wage Discrimination in India: Sticky Floor or Glass Ceiling?\thanks{Thanks, Mom!}}
+Gender Wage Discrimination in India: Sticky Floor or Glass Ceiling?\thanks{Thanks, Mom!}}
 
 \author{Luke DiMartino\thanks{Georgetown University. \href{mailto:lad132@georgetown.edu}{lad132@georgetown.edu}}}
 
@@ -52,16 +52,15 @@ Prior analyses of the large \textit{India Human Development Survey} have focused
 \section{Introduction
 \label{sec:introduction}}
 
-Gender wage discrimination has long been the subject of political and scholarly debate because the removal of discriminatory barriers has the power to enhance economic development. While economists explored the paradoxes of wage discrimination primarily in developing countries \citep{BlauKahn}, wage discrimination was largely ignored elsewhere. 
+Gender wage discrimination has long been the subject of political and scholarly debate because the removal of discriminatory barriers has the power to enhance economic development. While economists explored the paradoxes of wage discrimination primarily in developing countries \citep{BlauKahn}, wage discrimination elsewhere was largely ignored. 
 
-Since then, the body of empirical literature examining wage discrimination in India has primarily focused on estimations of the wage gap in general and on the returns to additional years of education. In their seminal work, \citet{BanerjeeandKnight1985} examined the effects of caste-based discrimination. Research on gender wage discrimination has relied upon the Indian National Sample Survey \citet{BhaumikChakrabarty}  \citet{Agrawal2014} exists.
+Gender is a central organizing structure in Indian society. Women are disadvantaged economically on almost every imaginable front. Women own a mere 11\% of agriculture land and constitute only 14\% of landowners, underprivileged in inheritance laws built for passing property down through male lineage \citep{AgarwalAnthwalMahesh}. Women bear the brunt of household labor, diminishing their ability to compete in wage labor markets \citep{Debnath}.
 
-While mean gaps are important, newer methods for decomposing differences go beyond single-statistic measures because mean differences may not be consistent across the wage distribution. \citet{Jenkins1994} goes so far as to criticize the single-statistic measure as inadequate for understanding the reality of discrimination. 
+The body of empirical literature examining wage discrimination in India has primarily focused on estimations of the wage gap --- the difference between the average wage for an advantaged group and the average wage for a disadvantaged group --- and on the returns to additional years of education. In their seminal work, \citet{BanerjeeandKnight1985} examined the effects of caste-based discrimination. Research on gender wage discrimination has commonly analyzed the Indian National Sample Survey \citep{BhaumikChakrabarty}.
 
-New research like attempts to measure and decompose gaps and estimate coefficients across the wage distribution. This method has been applied for public-private wage differences \citep{AzamPrakash2015} and for wage di
+While mean gaps are important, newer methods for decomposing differences go beyond single-statistic measures because differences may not be consistent across the wage distribution. \citet{Jenkins1994} criticizes the single-statistic measure as inadequate for understanding the reality of discrimination.  New research attempts to measure and decompose gaps and estimate coefficients across the wage distribution. This method has been applied for public-private wage differences \citep{AzamPrakash2015}, caste discrimination \citep{Agrawal2014}, and gender discrimination \citep{Khanna2012}.
 
 In this paper, I conduct a distributional analysis of gender wage gaps using wage data from the India Human Development Survey. The methodology, for the most part, mirrors the implementation of the Machado-Mata decomposition in \citet{Khanna2012}, which analyzes the Indian National Sample Survey.
-
 
 The remainder of this paper proceeds as follows: Section \ref{sec:methodology} and Section \ref{sec:data} describe the empirical strategy and the data. I then present results in Section \ref{sec:results}. Lastly, Section \ref{sec:conclusion} concludes. 
 
@@ -135,7 +134,7 @@ To investigate gendered wage gaps, I use individual-level data from the India Hu
 
 \subsection{Variables}
 
-The dependent variable of interest is the natural logarithm of inflation-adjusted hourly wages. For robustness, 11 outliers were trimmed, defined as those observations either below the 25\textsuperscript{th} income percentile less three times the interquartile range or greater than the 75\textsuperscript{th} income percentile plus three times the interquartile range. By author's calculations from the Wholesale Price Index, the rupee inflation rate from 2005 to 2012 was 68.032\%, an adjustment that is applied to price data collected in 2005. Unreported OLS estimations including an indicator for survey period suggested an in-sample wage inflation rate of 70-78\%.
+The dependent variable of interest is the natural logarithm of inflation-adjusted hourly wages. For robustness, 11 outliers were trimmed, defined as those observations either below the 25\textsuperscript{th} income percentile less three times the interquartile range or greater than the 75\textsuperscript{th} income percentile plus three times the interquartile range. By author's calculations from the Wholesale Price Index, the rupee inflation rate from 2005 to 2012 was 68.032\%, an adjustment that is applied to wage data collected in 2005. Unreported OLS estimations including an indicator for survey period suggested an in-sample wage inflation rate of 70-78\%.
 
 The grouping variable of interest is a \textit{female}, an indicator for women. Independent variables of interest include \textit{age}, \textit{years of education}, and indicators for marriage and literacy: \textit{marital status}, and \textit{literacy} --- all self-explanatory. Again following the method of \citet{Agrawal2014}, three years of education were added for respondents who reported graduate degrees, because the original data were censored at bachelor's. Likewise, years of experience can only be inferred by a proxy \textit{years of potential experience}, which is calculated as age minus five years (to account for years before education) minus years of education.\footnote{It is assumed that paid work begins immediately after education finishes.}
 

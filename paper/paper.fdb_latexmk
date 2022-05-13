@@ -1,12 +1,12 @@
 # Fdb version 3
-["bibtex paper"] 1652212003 "paper.aux" "paper.bbl" "paper" 1652212819
+["bibtex paper"] 1652279973 "paper.aux" "paper.bbl" "paper" 1652280070
   "/usr/local/texlive/2020/texmf-dist/bibtex/bst/economic/aer.bst" 1389482635 26812 2ae6e48450a8c17a93d98067b7084a7a ""
-  "paper.aux" 1652212818 4392 ba496146ace3dec381472aa32ce9abbc "pdflatex"
-  "paper_bib.bib" 1652206691 8046 0f59afd3e0a14f7cab937b6284e7a701 ""
+  "paper.aux" 1652280070 4611 469ebde455568060a15f088fab2ee63f "pdflatex"
+  "paper_bib.bib" 1652279344 8949 8bea60df5e570d245e67cebec855f02c ""
   (generated)
-  "paper.blg"
   "paper.bbl"
-["pdflatex"] 1652212818 "paper.tex" "paper.pdf" "paper" 1652212819
+  "paper.blg"
+["pdflatex"] 1652280069 "paper.tex" "paper.pdf" "paper" 1652280070
   "/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2020/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2020/texmf-dist/fonts/tfm/jknappen/ec/tcrm0700.tfm" 1136768653 1536 73da8e8f1d2a4c957d51ca133585586b ""
@@ -119,14 +119,14 @@
   "/usr/local/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1586288239 4811913 0be9a7e86c70a26e5e3042966bcd7097 ""
   "/usr/local/texlive/2020/texmf-var/web2c/pdftex/pdflatex.fmt" 1586288259 2432462 fd0fa20e9a3cb5f8169fd0ba1c955158 ""
   "/usr/local/texlive/2020/texmf.cnf" 1586288231 577 d60164b4589a341208aff7a667fbbdcb ""
-  "paper.aux" 1652212818 4392 ba496146ace3dec381472aa32ce9abbc "pdflatex"
-  "paper.bbl" 1652212003 2613 6fcd78781e0f6eea1abfa53081d15955 "bibtex paper"
-  "paper.out" 1652212818 818 1fa0e10b3c57d9f7762ee4dc99c6d1ff "pdflatex"
-  "paper.tex" 1652212816 10915 5b221ef1d870173557af7a260baf2292 ""
-  "tables/des-stats-2.tex" 1652211307 1911 534aab142a5b79846602fc4e29703a71 ""
+  "paper.aux" 1652280070 4611 469ebde455568060a15f088fab2ee63f "pdflatex"
+  "paper.bbl" 1652279974 3150 7717795abd7f47382077497f87cd00aa "bibtex paper"
+  "paper.out" 1652280070 818 1fa0e10b3c57d9f7762ee4dc99c6d1ff "pdflatex"
+  "paper.tex" 1652280068 11479 a06c05a2f9c9e813fd24eb42505c2034 ""
+  "tables/des-stats-2.tex" 1652213920 1911 534aab142a5b79846602fc4e29703a71 ""
   "tables/upper-tail-gender-comp.tex" 1651091092 1554 cb30a978c5f79d1000421be4b83291a9 ""
   (generated)
-  "paper.aux"
+  "paper.log"
   "paper.out"
   "paper.pdf"
-  "paper.log"
+  "paper.aux"
